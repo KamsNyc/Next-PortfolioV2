@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* HEADING/AVATAR WRAPPER */}
       <div id="wrapper" className="flex items-center w-full justify-between sm:gap-4">
-        <h1 className="text-7xl md:text-7xl xl:text-8xl tracking-wide lg:tracking-tighter py-2 lg:py-0 font-base">Kamel Singh</h1>
+        <h1 className="text-7xl md:text-7xl tracking-wide lg:tracking-tighter py-4 lg:py-0 font-base">Kamel Singh</h1>
         <Avatar className="w-32 h-32 lg:hidden">
           <AvatarImage className="" src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
@@ -34,7 +34,7 @@ export default function Home() {
       <h3 className="text-xl xl:text-2xl text-[#43D9AD] pl-2">Full-stack developer</h3>
 
       {/* DESKTOP SUBTITLE */}
-      <div className="pt-20 hidden md:block text-[#607B96] tracking-wide ">
+      <div className="pt-10 hidden md:block text-[#607B96] tracking-wide ">
         <p className="py-1">&mdash; your future fullstack developer </p>
         <p className="py-1 mb-4">&mdash; designing and deploying websites </p>
         <div id="wrapper" className="flex">
