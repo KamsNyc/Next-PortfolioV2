@@ -30,7 +30,7 @@ export default function Home() {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
-        <h3 className="text-xl xl:text-2xl text-[#43D9AD]"><span className=" text-xl lg:text-2xl pr-2">&#62;</span>Full-stack developer</h3>
+        <h3 className="text-xl xl:text-2xl text-[#43D9AD]"><span className=" text-xl lg:text-2xl pr-2">&gt;</span>Full-stack developer</h3>
 
 
         {/* DESKTOP SUBTITLE */}
