@@ -18,7 +18,7 @@ export default function Home() {
   <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60  " />
 
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 pt-20 gap-4 md:gap-8 xl:gap-16">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 pt-20 gap-4 md:gap-8 xl:gap-16 mb-[-2.5rem]">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
       <p className="text-lg xl:text-xl pl-2">What&apos;s up!, I&apos;m </p>
@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* MOBILE SUBTITLE */}
-      <div className="absolute bottom-[10%] md:hidden text-[#607B96] tracking-wide">
+      <div className="absolute bottom-[20%] md:hidden text-[#607B96] tracking-wide">
         <p className="py-1">your future fullstack developer </p>
         <p className="pb-4">designing and deploying websites </p>
         <div id="wrapper" className="flex">
