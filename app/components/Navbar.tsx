@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent block">
+    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent border-b mt-2">
       {/* Desktop Navbar */}
       <div className="lg:flex hidden justify-between items-center h-full">
         <div className="flex items-center px-8 border-r border-color ">

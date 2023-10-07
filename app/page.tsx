@@ -10,13 +10,15 @@ import BlueBlur from '/Blue.png'
 
 export default function Home() {
   return (
-    <main className="relative w-full border border-color rounded-xl bg-[#011627] px-2">
+    <main className="relative w-full h-screen border border-color rounded-xl bg-[#011627] px-4">
+      <Navbar />
+      
   {/* BACKGROUND BLUR IMAGES */}
   <Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 " />
   <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60  " />
 
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center h-screen text-white md:px-14 xl:px-32 pt-20 gap-4 md:gap-8 xl:gap-16">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 pt-20 gap-4 md:gap-8 xl:gap-16">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
       <p className="text-lg xl:text-xl pl-2">What&apos;s up!, I&apos;m </p>
@@ -46,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* MOBILE SUBTITLE */}
-      <div className="absolute bottom-[30%] md:hidden text-[#607B96] tracking-wide">
+      <div className="absolute bottom-[10%] md:hidden text-[#607B96] tracking-wide">
         <p className="py-1">your future fullstack developer </p>
         <p className="pb-4">designing and deploying websites </p>
         <div id="wrapper" className="flex">
@@ -65,6 +67,9 @@ export default function Home() {
       <Comingsoon />
     </div>
   </section>
+
+   {/* FOOTER */}
+   <div className="absolute bottom-2 w-full left-0 px-2"><Footer /></div>
 </main>
     // <main className="h-full w-full border border-color rounded-xl bg-[#011627]">
     //   {/* CONTAINER */}
