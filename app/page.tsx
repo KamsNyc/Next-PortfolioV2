@@ -33,11 +33,11 @@ export default function Home() {
 
       {/* DESKTOP SUBTITLE */}
       <div className="pt-20 hidden md:block text-[#607B96] tracking-wide ">
-        <p className="py-1">// your future fullstack developer </p>
-        <p className="py-1 mb-4">// designing and deploying websites </p>
+        <p className="py-1">&mdash; your future fullstack developer </p>
+        <p className="py-1 mb-4">&mdash; designing and deploying websites </p>
         <div id="wrapper" className="flex">
           <p className="py-1 text-[#4D5BCE]">
-            <span className="text-[#43D9AD]">const </span>contactButton <span className="text-white">=</span>
+            <span className="text-[#43D9AD]"><span className='text-[#607B96]'>&mdash; </span>const </span>contactButton <span className="text-[#607B96]">=</span>
           </p>
           <Button className="cursor-pointer ml-4 text-[#fff]" variant="outline">
             Let&apos;s talk
@@ -47,8 +47,8 @@ export default function Home() {
 
       {/* MOBILE SUBTITLE */}
       <div className="absolute bottom-16 md:hidden text-[#607B96] tracking-wide">
-        <p className="py-1">// your future fullstack developer </p>
-        <p className="pb-4">// designing and deploying websites </p>
+        <p className="py-1">your future fullstack developer </p>
+        <p className="pb-4">designing and deploying websites </p>
         <div id="wrapper" className="flex">
           <p className="py-1 text-[#4D5BCE]">
             <span className="text-[#43D9AD]">const </span>contactButton <span className="text-white">=</span>
