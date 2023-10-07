@@ -1,8 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Fira_Code, Inter } from 'next/font/google'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-const inter = Inter({ subsets: ['latin'] })
+const FC = Fira_Code({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${FC.className} bg-[#011627] w-full h-screen rounded-lg border border-color flex flex-col p-10`}>
+        <header className='' >
+          <Navbar />
+        </header>
+        <div className="w-full h-full">
+        {children}
+        </div>
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   )
 }

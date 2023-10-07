@@ -7,9 +7,8 @@
   border-color: #1E2D3D;
 }
 
-.border-active:hover {
-  border-color: #FEA55F;
-  transition: ease-in-out .3s;
+.border-active {
+  border-color: #184ec2;
   cursor: pointer;
   
 }
