@@ -6,6 +6,13 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button"
 import Comingsoon from "./components/Comingsoon";
 import BlueBlur from '/Blue.png'
+import Link from "next/link";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 
 export default function Home() {
@@ -68,44 +75,22 @@ export default function Home() {
     </div>
   </section>
 
+  
+
+  <div className="absolute bottom-20 lg:bottom-10 left-1/2 translate-x-[-50%] text-white bg-[#43D9AD] py-1 px-[.25rem] rounded-xl cursor-pointer">
+  <TooltipProvider>
+  <Tooltip>
+    <TooltipTrigger><Link href={'/about'}>Next Page</Link></TooltipTrigger>
+    <TooltipContent>
+      <p>check out about me</p>
+    </TooltipContent>
+  </Tooltip>
+</TooltipProvider>
+  </div>
+
    {/* FOOTER */}
    <div className="absolute bottom-2 w-full left-0 px-2"><Footer /></div>
 </main>
-    // <main className="h-full w-full border border-color rounded-xl bg-[#011627]">
-    //   {/* CONTAINER */}
-    //   <section className="flex justify-center items-center h-full text-white">
-
-    //     {/* LEFT SIDE */}
-    //     <div className="w-full h-full flex items-center justify-center">
-
-    //       <div id="wrapper">
-    //         <div className="flex items-center"> 
-              
-    //           <div className=""> 
-    //             <p className="text-lg">What's up!, I'm</p>
-    //             <h1 className=" text-2xl md:text-4xl lg:text-6xl pt-2 tracking-tight font-bold">Kamel Singh</h1>
-    //             <h2 className="text-2xl text-[#c2bf18] tracking-wide"><span className="text-4xl pr-[4px]">></span>FULLSTACK DEVELOPER</h2>
-    //           </div>
-    //           <Avatar className="ml-6 w-20 h-20">
-    //             <AvatarImage src="https://github.com/shadcn.png" />
-    //             <AvatarFallback>CN</AvatarFallback>
-    //           </Avatar>
-    //         </div>
-
-    //         <p className="pt-10 pb">//your future fullstack developer </p>
-    //         <p>//designing and deploying websites </p>
-    //         <p className="pb-5">//click on button to talk</p>
-    //         <Button className="" variant="outline">Let's talk</Button>
-    //       </div>
-    //     </div>
-
-    //     {/* RIGHT SIDE */}
-    //     <div className="w-full h-full flex items-center justify-center">
-    //       <section className="w-[450px] h-[450px] border border-color rounded-xl flex items-center justify-center bg-gray-500 hover:bg-gray-400 duration-100 ease-in">
-    //           <Comingsoon />
-    //       </section>
-    //     </div>
-    //   </section>
-    // </main>
+  
   );
 }
