@@ -10,7 +10,7 @@ import BlueBlur from '/Blue.png'
 
 export default function Home() {
   return (
-    <main className="relative w-full h-screen border border-color rounded-xl bg-[#011627] px-4">
+    <main className="relative w-full h-full border border-color rounded-xl bg-[#011627] px-4">
       <Navbar />
       
   {/* BACKGROUND BLUR IMAGES */}
@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* MOBILE SUBTITLE */}
-      <div className="absolute bottom-[20%] md:hidden text-[#607B96] tracking-wide">
+      <div className="absolute bottom-[30%] md:hidden text-[#607B96] tracking-wide">
         <p className="py-1">your future fullstack developer </p>
         <p className="pb-4">designing and deploying websites </p>
         <div id="wrapper" className="flex">
