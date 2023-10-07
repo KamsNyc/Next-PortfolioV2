@@ -18,16 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${FC.className} bg-[#000] w-full h-screen rounded-lg border border-color flex flex-col p-0 md:p-10`}>
-        <header className='' >
-          <Navbar />
-        </header>
-        <div className="w-full h-full">
+      <body className={`${FC.className} bg-[#000] w-full h-screen rounded-lg border border-color flex flex-col md:p-10`}>
+
         {children}
-        </div>
-        <footer>
-          <Footer />
-        </footer>
+
       </body>
     </html>
   )
