@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${FC.className} bg-[#000] w-full h-screen rounded-lg border border-color flex flex-col p-10`}>
+      <body className={`${FC.className} bg-[#000] w-full h-screen rounded-lg border border-color flex flex-col p-0 md:p-10`}>
         <header className='' >
           <Navbar />
         </header>
