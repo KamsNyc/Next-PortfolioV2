@@ -4,10 +4,12 @@ import Footer from "./components/Footer";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button"
+import Comingsoon from "./components/Comingsoon";
+
 
 export default function Home() {
   return (
-    <main className="h-full w-full border border-color rounded-xl">
+    <main className="h-full w-full border border-color rounded-xl bg-[#011627]">
       {/* CONTAINER */}
       <section className="flex justify-center items-center h-full text-white">
 
@@ -36,8 +38,10 @@ export default function Home() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-full h-full">
-          2
+        <div className="w-full h-full flex items-center justify-center">
+          <section className="w-[450px] h-[450px] border border-color rounded-xl flex items-center justify-center bg-gray-500 hover:bg-gray-400 duration-100 ease-in">
+              <Comingsoon />
+          </section>
         </div>
       </section>
     </main>

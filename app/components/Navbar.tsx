@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link href={"/"}>_hello</Link>
         </li>
         <li className="border-x border-color flex flex-1 items-center justify-center  ">
-          <Link href={"/"}>_about-me</Link>
+          <Link href={"/about"}>_about-me</Link>
         </li>
         <li className="border-r border-color flex flex-1 items-center justify-center  ">
           <Link href={"/"}>_projects</Link>

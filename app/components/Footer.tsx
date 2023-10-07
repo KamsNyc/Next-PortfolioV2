@@ -9,7 +9,7 @@ import {BsGithub} from "react-icons/bs"
 const Footer = () => {
   return (
     <footer className="flex w-full border-color h-10 link-color">
-      <section className="flex-[5%] border-r border-color flex items-center pl-5">
+      <section className="flex-[5%] border-r border-color flex items-center pl-2">
         <Link href={"/"}>find me in:</Link>
 
       </section>
