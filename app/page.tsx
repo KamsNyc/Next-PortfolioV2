@@ -21,25 +21,25 @@ export default function Home() {
   <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 pt-20 gap-4 md:gap-8 xl:gap-16">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
-      <p className="text-lg xl:text-xl pl-2">What&apos;s up!, I&apos;m </p>
+      <p className="text-lg xl:text-xl">What&apos;s up!, I&apos;m </p>
 
       {/* HEADING/AVATAR WRAPPER */}
       <div id="wrapper" className="flex items-center w-full justify-between sm:gap-4">
-        <h1 className="text-7xl md:text-7xl tracking-wide lg:tracking-tighter py-4 lg:py-0 font-base">Kamel Singh</h1>
+        <h1 className="text-7xl md:text-7xl tracking-wide lg:tracking-tighter py-2 lg:py-0 font-base ml-[-.5rem]">Kamel Singh</h1>
         <Avatar className="w-32 h-32 lg:hidden">
           <AvatarImage className="" src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
-      <h3 className="text-xl xl:text-2xl text-[#43D9AD] pl-2">Full-stack developer</h3>
+      <h3 className="text-xl xl:text-2xl text-[#43D9AD]">&gt; full-stack developer</h3>
 
       {/* DESKTOP SUBTITLE */}
       <div className="pt-10 hidden md:block text-[#607B96] tracking-wide ">
-        <p className="py-1">&mdash; your future fullstack developer </p>
-        <p className="py-1 mb-4">&mdash; designing and deploying websites </p>
+        <p className="">&gt; your future fullstack developer </p>
+        <p className=" mb-4">&gt; designing and deploying websites </p>
         <div id="wrapper" className="flex">
           <p className="py-1 text-[#4D5BCE]">
-            <span className="text-[#43D9AD]"><span className='text-[#607B96]'>&mdash; </span>const </span>contactButton <span className="text-[#607B96]">=</span>
+            <span className="text-[#43D9AD]"><span className='text-[#607B96]'></span>const </span>contactButton <span className="text-[#607B96]">=</span>
           </p>
           <Button className="cursor-pointer ml-4 text-[#fff]" variant="outline">
             Let&apos;s talk
@@ -49,8 +49,8 @@ export default function Home() {
 
       {/* MOBILE SUBTITLE */}
       <div className="absolute bottom-[25%] md:hidden text-[#607B96] tracking-wide">
-        <p className="py-1">your future fullstack developer </p>
-        <p className="pb-4">designing and deploying websites </p>
+        <p className="py-1">&gt; your future fullstack developer </p>
+        <p className="pb-4">&gt; designing and deploying websites </p>
         <div id="wrapper" className="flex">
           <p className="py-1 text-[#4D5BCE]">
             <span className="text-[#43D9AD]">const </span>contactButton <span className="text-white">=</span>
