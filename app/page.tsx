@@ -61,7 +61,7 @@ export default function Home() {
     </div>
 
     {/* RIGHT SIDE */}
-    <div className="flex items-center justify-center w-full pt-8 md:pt-0">
+    <div className="hidden md:flex items-center justify-center w-full pt-8 md:pt-0">
       <Comingsoon />
     </div>
   </section>
