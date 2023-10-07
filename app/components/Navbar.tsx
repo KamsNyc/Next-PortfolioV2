@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent">
+    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent block">
       {/* Desktop Navbar */}
       <div className="lg:flex hidden justify-between items-center h-full">
         <div className="flex items-center px-8 border-x border-color ">
@@ -32,7 +32,7 @@ const Navbar = () => {
         </ul>
       </div>
       {/* Mobile Navbar */}
-      <div className=":hidden block relative h-full z-20">
+      <div className="lg:hidden block relative h-full z-20">
         <div className="flex items-center justify-between h-full">
           <div className="pl-5">
             <Link href={"/"}>kamel-singh</Link>

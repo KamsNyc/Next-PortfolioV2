@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <main className="relative h-full w-full border border-color rounded-xl bg-[#011627]">
     {/* BACKGROUND BLUR IMAGES */}
-    <Image src="/Green.png" fill={true} alt="green blur" className="absolute md:hidden top-0 left-0 opacity-100" />
-    <Image src="/Blue.png" fill={true} alt="blue blur" className="absolute md:hidden top-0 right-0 opacity-80" />
+    <Image src="/Green.png" fill={true} alt="green blur" className="absolute  top-0 left-0 opacity-40 " />
+    <Image src="/Blue.png" fill={true} alt="blue blur" className="absolute top-0 right-0 opacity-60  " />
 
     {/* CONTAINER */}
-    <section className="md:flex justify-center items-center h-full text-white px-7 md:px-14 pt-20">
+    <section className="md:flex justify-center items-center h-full text-white px-7 md:px-14 xl:px-32 pt-20 gap-4 2xl:gap-8">
       {/* LEFT SIDE */}
-      <div className="w-full">
+      <div className="w-full z-10">
         <p className="text-lg xl:text-xl">What's up!, I'm </p>
 
         {/* HEADING/AVATAR WRAPPER */}
@@ -29,14 +29,16 @@ export default function Home() {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
-        <h3 className="text-xl xl:text-2xl text-[#43D9AD]"><span className=" text-3xl pr-4">></span>Full-stack developer</h3>
+        <h3 className="text-xl xl:text-2xl text-[#43D9AD]"><span className=" text-xl lg:text-2xl pr-2">></span>Full-stack developer</h3>
 
         {/* DESKTOP SUBTITLE */}
-        <div className="pt-20 hidden md:block ">
+        <div className="pt-20 hidden md:block  text-[#607B96] tracking-wide ">
           <p className="py-1">//your future fullstack developer </p>
-          <p className="py-1">//designing and deploying websites </p>
-          <p className="py-1 mb-4">//click on button to talk</p>
-          <Button className=" text-[#43D9AD]" variant="outline">Let's talk</Button>
+          <p className="py-1 mb-4">//designing and deploying websites </p>
+          <div id="wrapper" className="flex">
+          <p className="py-1 text-[#4D5BCE]"><span className="text-[#43D9AD]">const </span>contactButton <span className="text-white">=</span></p>
+          <Button className=" cursor-pointer ml-4 text-[#fff]" variant="outline"> Let's talk</Button>
+          </div>
         </div>
 
         {/* MOBILE SUBTITLE */}
@@ -50,9 +52,10 @@ export default function Home() {
 
       {/* RIGHT SIDE */}
 
-      <div className="w-full">
-        1
-      </div>
+        <div className="flex items-center justify-center w-full pt-8 md:pt-0">
+        <Comingsoon />
+        </div>
+        
     </section>
   </main>
     // <main className="h-full w-full border border-color rounded-xl bg-[#011627]">
