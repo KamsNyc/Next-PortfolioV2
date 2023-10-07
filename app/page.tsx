@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <main className="relative h-full w-full border border-color rounded-xl bg-[#011627]">
     {/* BACKGROUND BLUR IMAGES */}
-    <Image src="/Green.png" fill={true} alt="green blur" className="absolute  top-0 left-0 opacity-40 " />
-    <Image src="/Blue.png" fill={true} alt="blue blur" className="absolute top-0 right-0 opacity-60  " />
+    <Image src="/Green.png" fill alt="green blur" className="absolute  top-0 left-0 opacity-40 " />
+    <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60  " />
+
 
     {/* CONTAINER */}
     <section className="md:flex justify-center items-center h-full text-white px-7 md:px-14 xl:px-32 pt-20 gap-4 2xl:gap-8">

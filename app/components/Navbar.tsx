@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent block">
       {/* Desktop Navbar */}
       <div className="lg:flex hidden justify-between items-center h-full">
-        <div className="flex items-center px-8 border-x border-color ">
+        <div className="flex items-center px-8 border-r border-color ">
           <Link href={"/"}>kamel-singh</Link>
         </div>
         <ul className="flex ">
