@@ -17,10 +17,10 @@ export default function Home() {
 
 
     {/* CONTAINER */}
-    <section className="md:flex justify-center items-center h-full text-white px-7 md:px-14 xl:px-32 pt-20 gap-4 2xl:gap-8">
+    <section className="md:flex justify-center items-center h-full text-white px-7 md:px-14 xl:px-32 pt-20 gap-4 md:gap-8 xl:gap-16">
       {/* LEFT SIDE */}
       <div className="w-full z-10">
-        <p className="text-lg xl:text-xl">What's up!, I'm </p>
+        <p className="text-lg xl:text-xl pl-2">What's up!, I'm </p>
 
         {/* HEADING/AVATAR WRAPPER */}
         <div id="wrapper" className="flex items-center w-full justify-between sm:gap-4">
@@ -30,7 +30,7 @@ export default function Home() {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
-        <h3 className="text-xl xl:text-2xl text-[#43D9AD]"><span className=" text-xl lg:text-2xl pr-2">&gt;</span>Full-stack developer</h3>
+        <h3 className="text-xl xl:text-2xl text-[#43D9AD] pl-2">Full-stack developer</h3>
 
 
         {/* DESKTOP SUBTITLE */}
