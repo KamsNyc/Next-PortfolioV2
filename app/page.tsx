@@ -47,8 +47,10 @@ export default function Home() {
         <div className="absolute bottom-16 md:hidden text-[#607B96] tracking-wide">
           <p className="py-1">//your future fullstack developer </p>
           <p className="pb-4">//designing and deploying websites </p>
-          <p className="pb-4">//click on button to talk</p>
-          <Button className="text-[#43D9AD]" variant="outline">Let's talk</Button>
+          <div id="wrapper" className="flex">
+          <p className="py-1 text-[#4D5BCE]"><span className="text-[#43D9AD]">const </span>contactButton <span className="text-white">=</span></p>
+          <Button className=" cursor-pointer ml-2 text-[#fff]" variant="outline"> Let's talk</Button>
+          </div>
         </div>
       </div>
 
