@@ -21,12 +21,9 @@ export default function Home() {
       {/* NAVBAR */}
       <div className="absolute top-0 left-0 w-full px- border-b border-color md:px-14 xl:px-32 2xl:px-60 z-40 "><Navbar /></div>
       
-  {/* BACKGROUND BLUR IMAGES */}
-  <Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 z-0" />
-  <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60 z-0 " />
-
+  
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 gap-4 md:gap-8 xl:gap-16 pt-60">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-20 gap-4 md:gap-8 xl:gap-16 mt-10 md:mt-20 lg:mt-10">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
       <p className="text-lg xl:text-xl">What&apos;s up!, I&apos;m </p>
@@ -92,6 +89,10 @@ export default function Home() {
 
    {/* FOOTER */}
    <div className="absolute bottom-0 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 "><Footer /></div>
+{/* BACKGROUND BLUR IMAGES */}
+<Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 z-0" />
+  <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60 z-0 " />
+
 </main>
   
   );
