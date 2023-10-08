@@ -111,7 +111,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <AboutItem selectedItem={selectedItem} /> {/* Pass the prop correctly */}
+        <AboutItem /> {/* No need to pass the prop */}
       </section>
 
       {/* RIGHT SIDE */}
