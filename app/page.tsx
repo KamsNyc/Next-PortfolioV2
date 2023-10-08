@@ -17,7 +17,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative w-full h-screen border border-color rounded-xl bg-[#011627] px-4">
+    <main className="relative w-full h-screen border border-color rounded-none md:rounded-xl bg-[#011627] px-4">
       {/* NAVBAR */}
       <div className="absolute top-0 left-0 w-full px- border-b border-color md:px-14 xl:px-32 2xl:px-60 z-40 "><Navbar /></div>
       

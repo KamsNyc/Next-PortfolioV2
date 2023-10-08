@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import AboutItem from './AboutItem'
 
 const Sidebar = () => {
   return (
@@ -60,9 +61,10 @@ interests
 </div>
 
 
-
+<AboutItem />
 
       </section>
+
 
         {/* RIGHT SIDE */}
       <section className="flex-[80%] md:flex">
