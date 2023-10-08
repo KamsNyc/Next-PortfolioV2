@@ -10,40 +10,40 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent mt-2 ">
+    <nav className={`w-full h-12 link-color rounded-sm mt-2 ${isMenuOpen ? '' : ''}`}>
       {/* Desktop Navbar */}
       <div className="lg:flex hidden justify-between items-center h-full z-10">
-        <div >
-          <Link className="flex items-center px-8 border-r border-color cursor-pointer " href={"/"}>kamel-singh</Link>
+        <div>
+          <Link className={`flex items-center px-8 cursor-pointer`} href={"/"}>kamel-singh</Link>
         </div>
-        <ul className="flex ">
-          <li className="border-color flex items-center justify-center px-8 cursor-pointer">
+        <ul className="flex">
+          <li className={`flex items-center justify-center px-8 cursor-pointer`}>
             <Link href={"/"}>_hello</Link>
           </li>
-          <li className="px-8 border-x border-color flex items-center justify-center cursor-pointer">
+          <li className={`px-8 flex items-center justify-center cursor-pointer`}>
             <Link href={"/about"}>_about-me</Link>
           </li>
-          <li className="px-8 border-r border-color flex items-center justify-center cursor-pointer">
+          <li className={`px-8 flex items-center justify-center cursor-pointer`}>
             <Link href={"/"}>_projects</Link>
           </li>
-          <li className="border-l border-color flex items-center justify-center px-8 cursor-pointer">
+          <li className={`flex items-center justify-center px-8 cursor-pointer`}>
             <Link href={"/"}>_contact-me</Link>
           </li>
         </ul>
       </div>
       {/* Mobile Navbar */}
-      <div className="lg:hidden block relative h-full z-20">
+      <div className="lg:hidden block relative h-full z-40">
         <div className="flex items-center justify-between h-full">
           <div className="pl-5 cursor-pointer">
             <Link href={"/"}>kamel-singh</Link>
           </div>
           <button
             onClick={toggleMenu}
-            className="mr-5 focus:outline-none cursor-pointer hover:scale-105 duration-300 ease-in-out "
+            className="mr-5 focus:outline-none cursor-pointer hover:scale-105 duration-500 ease-in-out"
             aria-label="Toggle Menu"
           >
             <svg
-              className="h-6 w-6 fill-current"
+              className={`h-6 w-6 fill-current ${isMenuOpen ? 'text-color-color' : ''}`}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -56,17 +56,17 @@ const Navbar = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <ul className="pt-2 pl-5 absolute top-12 left-0 w-full bg-white z-20">
-            <li className="mb-2">
+          <ul className="py-2 absolute top-12 left-0 w-full bg-black/80 z-40 backdrop-blur-md">
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
               <Link href={"/"}>_hello</Link>
             </li>
-            <li className="mb-2">
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
               <Link href={"/about"}>_about-me</Link>
             </li>
-            <li className="mb-2">
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
               <Link href={"/"}>_projects</Link>
             </li>
-            <li>
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
               <Link href={"/"}>_contact-me</Link>
             </li>
           </ul>
@@ -77,5 +77,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
