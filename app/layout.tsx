@@ -18,10 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${FC.className} bg-[#000] w-full h-screen rounded-lg border border-color flex flex-col md:p-10`}>
-
+      <body className={`${FC.className} bg-[#000] w-full h-screen rounded-lg border border-color flex flex-col md:p-10 z-0`}>
         {children}
-
       </body>
     </html>
   )

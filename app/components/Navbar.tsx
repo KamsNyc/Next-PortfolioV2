@@ -10,23 +10,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent border-b mt-2">
+    <nav className="w-full border-color h-12 link-color rounded-sm sm:bg-transparent mt-2 ">
       {/* Desktop Navbar */}
-      <div className="lg:flex hidden justify-between items-center h-full">
-        <div className="flex items-center px-8 border-r border-color ">
-          <Link href={"/"}>kamel-singh</Link>
+      <div className="lg:flex hidden justify-between items-center h-full z-10">
+        <div >
+          <Link className="flex items-center px-8 border-r border-color cursor-pointer " href={"/"}>kamel-singh</Link>
         </div>
         <ul className="flex ">
-          <li className="border-color flex items-center justify-center px-8">
+          <li className="border-color flex items-center justify-center px-8 cursor-pointer">
             <Link href={"/"}>_hello</Link>
           </li>
-          <li className="px-8 border-x border-color flex items-center justify-center">
+          <li className="px-8 border-x border-color flex items-center justify-center cursor-pointer">
             <Link href={"/about"}>_about-me</Link>
           </li>
-          <li className="px-8 border-r border-color flex items-center justify-center">
+          <li className="px-8 border-r border-color flex items-center justify-center cursor-pointer">
             <Link href={"/"}>_projects</Link>
           </li>
-          <li className="border-l border-color flex items-center justify-center px-8">
+          <li className="border-l border-color flex items-center justify-center px-8 cursor-pointer">
             <Link href={"/"}>_contact-me</Link>
           </li>
         </ul>
@@ -34,12 +34,12 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div className="lg:hidden block relative h-full z-20">
         <div className="flex items-center justify-between h-full">
-          <div className="pl-5">
+          <div className="pl-5 cursor-pointer">
             <Link href={"/"}>kamel-singh</Link>
           </div>
           <button
             onClick={toggleMenu}
-            className="mr-5 focus:outline-none "
+            className="mr-5 focus:outline-none cursor-pointer hover:scale-105 duration-300 ease-in-out "
             aria-label="Toggle Menu"
           >
             <svg
