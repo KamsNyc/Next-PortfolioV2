@@ -41,18 +41,19 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
         </section>
 
         {/* TOPSIDE MOBILE */}
-        <section className="flex md:hidden">
-          <h1>
+        <section className="flex md:hidden mt-2 px-7">
+          <h1 className="text-[14px]">
             {/* personal-info */}
-            <span className="text-[14px] link-color px-4">
-              {`// personal-info / ${selectedItem}`}
+            // personal-info
+            <span className="text-[14px] link-color pl-2 tracking-tighter ">
+              {`/ ${selectedItem}`}
             </span>
           </h1>
         </section>
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] mt-7 md:mt-4 px-4 max-h-[310px] md:max-h-[610px] md:overflow-y-hidden"
+          className="md:flex-[50%] mt-4 md:mt-4 px-7 max-h-[310px] md:max-h-[610px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto", // Show the scrollbar by default
           }}
@@ -62,11 +63,11 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
       </section>
 
       {/* RIGHT SPLIT */}
-      <section className="md:flex-[50%] border-l border-color">
+      <section className="md:flex-[50%] border-l border-color mt-4 md:mt-0 ">
         {/* TOPSIDE DESKTOP */}
-        <section className="link-color hidden md:flex items-center border-b border-color">
-          <div className="flex items-center gap-6 px-4 h-full py-[4.20px] text-[#011627]">
-            1
+        <section className="link-color flex items-center">
+          <div className="flex items-center gap-6 px-7 h-full py-[5.4px] ">
+            <h1 className="text-white text-[14px] md:text-[#011627]">// code snippets showcase:</h1>
           </div>
         </section>
       </section>
