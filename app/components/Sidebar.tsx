@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState('bio'); // Initialize with 'bio'
 
   // Function to handle item selection
-  const handleItemClick = (item: string) => { // Add type annotation for 'item'
+  const handleItemClick = (item: string) => {
     setSelectedItem(item);
   };
 
@@ -111,7 +111,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <AboutItem selectedItem={selectedItem} />
+        <AboutItem selectedItem={selectedItem} /> {/* Pass the prop correctly */}
       </section>
 
       {/* RIGHT SIDE */}

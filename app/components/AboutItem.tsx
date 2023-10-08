@@ -11,7 +11,7 @@ const AboutItem = () => {
   return (
     <section className="mt-4 gap-4">
 
-    {/* MAIN ITEM NUMBER 1 */}
+      {/* MAIN ITEM NUMBER 1 */}
       <Accordion
         type="single"
         collapsible
@@ -25,7 +25,7 @@ const AboutItem = () => {
               height={12}
               alt="Down Arrow"
             />
-           <h1>hobbies</h1> 
+            <h1>hobbies</h1>
           </AccordionTrigger>
           <AccordionContent className="py-4">
             <div className="py-1">
@@ -53,17 +53,11 @@ const AboutItem = () => {
                 bio
               </div>
             </div>
-
-            
           </AccordionContent>
-          
         </AccordionItem>
-        
       </Accordion>
 
-
       {/* MAIN ITEM NUMBER 2 */}
-
       <Accordion
         type="single"
         collapsible
@@ -105,15 +99,9 @@ const AboutItem = () => {
                 bio
               </div>
             </div>
-
-            
           </AccordionContent>
-          
         </AccordionItem>
-        
       </Accordion>
-
-      
     </section>
   );
 };
