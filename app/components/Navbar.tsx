@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link href={"/about"}>_about-me</Link>
           </li>
           <li className={`px-8 flex items-center justify-center cursor-pointer`}>
-            <Link href={"/"}>_projects</Link>
+            <Link href={"/work"}>_projects</Link>
           </li>
           <li className={`flex items-center justify-center px-8 cursor-pointer`}>
             <Link href={"/"}>_contact-me</Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
               <Link href={"/about"}>_about-me</Link>
             </li>
             <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
-              <Link href={"/"}>_projects</Link>
+              <Link href={"/work"}>_projects</Link>
             </li>
             <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
               <Link href={"/"}>_contact-me</Link>

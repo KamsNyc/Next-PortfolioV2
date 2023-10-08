@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Sidebar from '../components/Sidebar'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import Link from 'next/link'
 
 const about = () => {
   return (
@@ -17,6 +19,18 @@ const about = () => {
           
         </div>
         <Sidebar />
+
+        {/* NEXT PAGE TOOL TIP */}
+  <div className="absolute bottom-1 left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out text-[14px] md:text-base">
+  <TooltipProvider>
+  <Tooltip>
+    <TooltipTrigger><Link href={'/work'}>Project &gt;</Link></TooltipTrigger>
+    <TooltipContent>
+      <p>check out my projects</p>
+    </TooltipContent>
+  </Tooltip>
+</TooltipProvider>
+  </div>
 
       </div>
       

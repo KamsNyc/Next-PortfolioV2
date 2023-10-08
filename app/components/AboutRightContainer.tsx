@@ -23,8 +23,8 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
     `;
   } else if (selectedItem === "interests") {
     content = "This is my interests for now.";
-  } else if (selectedItem === "learning") {
-    content = "This is my learning content.";
+  } else if (selectedItem === "skills") {
+    content = "This is my skills content.";
   }
 
   return (

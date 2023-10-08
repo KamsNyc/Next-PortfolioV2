@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import AboutItem from './AboutItem';
 import AboutRightContainer from './AboutRightContainer';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import Link from 'next/link';
 
 const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState('bio'); // Initialize with 'bio'
@@ -40,7 +42,7 @@ const Sidebar = () => {
           }`}
           onClick={() => handleItemClick('bio')}
         >
-          <div className="flex items-center px-7 py-1">
+          <div className="flex items-center px-7 py-1 mt-1">
             <Image
               className="mb-1 mr-3"
               src="/ArrowRightOl.png"
@@ -88,9 +90,9 @@ const Sidebar = () => {
         {/* ITEMS 3 */}
         <div
           className={`${
-            selectedItem === 'learning' ? 'bg-gray-800' : ''
+            selectedItem === 'skills' ? 'bg-gray-800' : ''
           }`}
-          onClick={() => handleItemClick('learning')}
+          onClick={() => handleItemClick('skills')}
         >
           <div className="flex items-center px-7 py-1 text-[#607B96]">
             <Image
@@ -107,11 +109,14 @@ const Sidebar = () => {
               height={15}
               alt="Picture of the author"
             />
-            learning
+            skills
           </div>
         </div>
+        
 
-        <AboutItem /> {/* No need to pass the prop */}
+        <AboutItem /> 
+
+        
       </section>
 
       {/* RIGHT SIDE */}

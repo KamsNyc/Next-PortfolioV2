@@ -76,7 +76,7 @@ export default function Home() {
   
   
   {/* NEXT PAGE TOOL TIP */}
-  <div className="absolute bottom-20 md:bottom-[.45px] left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out">
+  <div className="absolute bottom-20 md:bottom-[.45px] left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out text-[14px] md:text-base">
   <TooltipProvider>
   <Tooltip>
     <TooltipTrigger><Link href={'/about'}>About Me &gt;</Link></TooltipTrigger>
