@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState('bio'); // Initialize with 'bio'
 
   // Function to handle item selection
-  const handleItemClick = (item: string) => {
+  const handleItemClick = (item: string) => { // Add type annotation for 'item'
     setSelectedItem(item);
   };
 
