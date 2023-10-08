@@ -9,16 +9,16 @@ import {
 
 const AboutItem = () => {
   return (
-    <>
+    <section className="mt-4 gap-4">
 
     {/* MAIN ITEM NUMBER 1 */}
       <Accordion
         type="single"
         collapsible
-        className="flex-col items-center gap-2"
+        className="flex-col items-center gap-2 mb-1"
       >
         <AccordionItem value="item-1" className="">
-          <AccordionTrigger className="text-white text-base font-medium bg-gray-800 w-full">
+          <AccordionTrigger className="text-white text-base font-medium bg-gray-800 md:bg-transparent w-full border-b border-t border-color px-7">
             <Image
               src="/DownArrowFilled.png"
               width={12}
@@ -27,7 +27,7 @@ const AboutItem = () => {
             />
            <h1>hobbies</h1> 
           </AccordionTrigger>
-          <AccordionContent className="">
+          <AccordionContent className="py-4">
             <div className="py-1">
               <div className="flex items-center pl-6 py-2 text-sm bg-white/5 rounded-xl hover:bg-red-500">
                 <Image
@@ -67,10 +67,10 @@ const AboutItem = () => {
       <Accordion
         type="single"
         collapsible
-        className="flex-col items-center gap-2"
+        className="flex-col items-center gap-2 mb-4"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger className="text-white text-base font-medium bg-gray-800 w-full">
+          <AccordionTrigger className="text-white text-base font-medium bg-gray-800 md:bg-transparent w-full border-b border-color px-7">
             <Image
               src="/DownArrowFilled.png"
               width={12}
@@ -79,7 +79,7 @@ const AboutItem = () => {
             />
             <h1>contacts</h1>
           </AccordionTrigger>
-          <AccordionContent className="">
+          <AccordionContent className="py-4">
             <div className="py-1">
               <div className="flex items-center pl-6 py-2 text-sm bg-white/5 rounded-xl hover:bg-red-500">
                 <Image
@@ -114,7 +114,7 @@ const AboutItem = () => {
       </Accordion>
 
       
-    </>
+    </section>
   );
 };
 
