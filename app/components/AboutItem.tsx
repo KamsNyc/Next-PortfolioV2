@@ -17,15 +17,15 @@ const AboutItem = () => {
         collapsible
         className="flex-col items-center gap-2"
       >
-        <AccordionItem value="item-1">
-          <AccordionTrigger className="text-white text-base font-medium">
+        <AccordionItem value="item-1" className="">
+          <AccordionTrigger className="text-white text-base font-medium bg-gray-800 w-full">
             <Image
               src="/DownArrowFilled.png"
               width={12}
               height={12}
               alt="Down Arrow"
             />
-            hobbies
+           <h1>hobbies</h1> 
           </AccordionTrigger>
           <AccordionContent className="">
             <div className="py-1">
@@ -70,14 +70,14 @@ const AboutItem = () => {
         className="flex-col items-center gap-2"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger className="text-white text-base font-medium">
+          <AccordionTrigger className="text-white text-base font-medium bg-gray-800 w-full">
             <Image
               src="/DownArrowFilled.png"
               width={12}
               height={12}
               alt="Down Arrow"
             />
-            contacts
+            <h1>contacts</h1>
           </AccordionTrigger>
           <AccordionContent className="">
             <div className="py-1">
