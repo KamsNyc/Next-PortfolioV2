@@ -1,8 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types"; // Import PropTypes
 import { AiOutlineClose } from "react-icons/ai";
 
-const AboutRightContainer = ({ selectedItem }) => {
+// Define the prop type for selectedItem
+type AboutRightContainerProps = {
+  selectedItem: string;
+};
+
+const AboutRightContainer: React.FC<AboutRightContainerProps> = ({ selectedItem }) => {
   let content = "";
 
   if (selectedItem === "bio") {
@@ -38,7 +42,7 @@ const AboutRightContainer = ({ selectedItem }) => {
         </section>
 
         {/* CONTENT */}
-        <section className="md:flex-[50%] mt-7 px-4">
+        <section className="md:flex-[50%] mt-7 md:mt-4 px-4">
           <h1 className="text-[14px] md:text-[15px]">{content}</h1>
         </section>
       </section>
@@ -47,11 +51,6 @@ const AboutRightContainer = ({ selectedItem }) => {
       <section className="md:flex-[50%]">2</section>
     </section>
   );
-};
-
-// Define prop types
-AboutRightContainer.propTypes = {
-  selectedItem: PropTypes.string.isRequired, // Example type, adjust as needed
 };
 
 export default AboutRightContainer;
