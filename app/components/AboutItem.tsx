@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 
 const AboutItem = () => {
+
   return (
     <section className="mt-4 gap-4">
 
@@ -39,7 +40,7 @@ const AboutItem = () => {
                   height={15}
                   alt="Picture of the author"
                 />
-                bio
+                hobby1
               </div>
             </div>
 
@@ -52,7 +53,7 @@ const AboutItem = () => {
                   height={15}
                   alt="Picture of the author"
                 />
-                bio
+                hobby2
               </div>
             </div>
           </AccordionContent>
@@ -85,7 +86,7 @@ const AboutItem = () => {
                   height={15}
                   alt="Picture of the author"
                 />
-                bio
+                contact1
               </div>
             </div>
 
@@ -98,7 +99,7 @@ const AboutItem = () => {
                   height={15}
                   alt="Picture of the author"
                 />
-                bio
+                contact2
               </div>
             </div>
           </AccordionContent>

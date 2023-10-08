@@ -62,6 +62,10 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
         </ScrollArea>
       </section>
 
+      
+      
+      
+      
       {/* RIGHT SPLIT */}
       <section className="md:flex-[50%] border-l border-color mt-4 md:mt-0 ">
         {/* TOPSIDE DESKTOP */}
