@@ -44,7 +44,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
         <section className="flex md:hidden mt-2 px-7">
           <h1 className="text-[14px]">
             {/* personal-info */}
-            // personal-info
+            &gt; personal-info
             <span className="text-[14px] link-color pl-2 tracking-tighter ">
               {`/ ${selectedItem}`}
             </span>
@@ -55,7 +55,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
         <ScrollArea
           className="md:flex-[50%] mt-4 md:mt-4 px-7 max-h-[310px] md:max-h-[610px] md:overflow-y-hidden link-color"
           style={{
-            overflowY: "auto", // Show the scrollbar by default
+            overflowY: "auto",
           }}
         >
           <h1 className="text-[14px] md:text-[15px]">{content}</h1>
@@ -67,7 +67,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
         {/* TOPSIDE DESKTOP */}
         <section className="link-color flex items-center md:border-b border-color">
           <div className="flex items-center gap-6 px-7 h-full py-[5.4px] ">
-            <h1 className="text-white text-[14px] md:text-[#011627]">// code snippets showcase:</h1>
+            <h1 className="text-white text-[14px] md:text-[#011627]">&gt; code snippets showcase:</h1>
           </div>
         </section>
       </section>
