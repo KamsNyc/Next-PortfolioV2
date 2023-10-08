@@ -23,7 +23,7 @@ export default function Home() {
       
   
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-44 gap-4 md:gap-8 xl:gap-16">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-44 lg:pt-36 gap-4 md:gap-8 xl:gap-16">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
       <p className="text-lg xl:text-xl">What&apos;s up!, I&apos;m </p>
