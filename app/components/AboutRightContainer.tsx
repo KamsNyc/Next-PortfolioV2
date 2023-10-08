@@ -53,7 +53,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] mt-4 md:mt-4 px-7 max-h-[310px] md:max-h-[610px] md:overflow-y-hidden link-color"
+          className="md:flex-[50%] mt-4 md:mt-4 px-7 max-h-[210px] md:max-h-[610px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto",
           }}
