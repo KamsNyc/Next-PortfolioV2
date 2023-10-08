@@ -18,14 +18,15 @@ import {
 export default function Home() {
   return (
     <main className="relative w-full h-screen border border-color rounded-xl bg-[#011627] px-4">
-      <div className="absolute top-2 left-0 w-full px-4 border-b border-color md:px-14 xl:px-32 2xl:px-60 z-40 "><Navbar /></div>
+      {/* NAVBAR */}
+      <div className="absolute top-0 left-0 w-full px- border-b border-color md:px-14 xl:px-32 2xl:px-60 z-40 "><Navbar /></div>
       
   {/* BACKGROUND BLUR IMAGES */}
   <Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 z-0" />
   <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60 z-0 " />
 
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-20 gap-4 md:gap-8 xl:gap-16 mt-10 md:mt-20 lg:mt-10">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 gap-4 md:gap-8 xl:gap-16 pt-60">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
       <p className="text-lg xl:text-xl">What&apos;s up!, I&apos;m </p>
@@ -78,7 +79,7 @@ export default function Home() {
   
   
   {/* NEXT PAGE TOOL TIP */}
-  <div className="absolute bottom-20 md:bottom-2 left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out">
+  <div className="absolute bottom-20 md:bottom-[.45px] left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out">
   <TooltipProvider>
   <Tooltip>
     <TooltipTrigger><Link href={'/about'}>About Me &gt;</Link></TooltipTrigger>
@@ -90,7 +91,7 @@ export default function Home() {
   </div>
 
    {/* FOOTER */}
-   <div className="absolute bottom-2 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 "><Footer /></div>
+   <div className="absolute bottom-0 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 "><Footer /></div>
 </main>
   
   );

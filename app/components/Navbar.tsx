@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`w-full h-12 link-color rounded-sm mt-2 ${isMenuOpen ? '' : ''}`}>
+    <nav className={`w-full h-12 link-color rounded-sm ${isMenuOpen ? '' : ''}`}>
       {/* Desktop Navbar */}
       <div className="lg:flex hidden justify-between items-center h-full z-10">
         <div>
