@@ -9,8 +9,8 @@ const Comingsoon = () => {
     ])
 
   return (
-    <div className="bg-gray-800 rounded-xl w-[400px] h-[175px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]">
-    <p className='text-4xl text-gray-300 flex items-center justify-center h-full'>coming soon</p>
+    <div className="bg-white/5 rounded-xl w-full h-[175px] md:h-[300px] lg:h-[400px]">
+    <p className='text-base lg:text-4xl text-gray-300 flex items-center justify-center h-full'>coming soon</p>
     </div>
   )
 }
