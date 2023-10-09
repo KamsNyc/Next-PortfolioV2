@@ -77,7 +77,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
           
           {/*MOBILE CONTENT */}
         
-          <ScrollArea className="block md:hidden justify-center items-center h-[225px] md:h-[670px] pt-2 px-6 link-color">
+          <ScrollArea className="block md:hidden justify-center items-center h-[225px] pt-2 px-6 link-color">
           <h1 className="text-4xl">COMING SOON</h1>
           <p className="text-[14px]">test</p>
           <p className="text-[14px]">test</p>
@@ -97,7 +97,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
 
          {/*DESKTOP CONTENT */}
         
-         <section className="hidden md:flex justify-center items-center h-[225px] md:h-[670px] pt-2 px-6 text-center">
+         <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center">
           <div className="flex-col ">
           <Comingsoon />
           </div>
