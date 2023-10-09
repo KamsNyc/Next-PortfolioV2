@@ -12,13 +12,13 @@ import {
 const AboutItem = () => {
 
   return (
-    <section className="mt-4 gap-4">
+    <section className="pt-4 gap-4">
 
       {/* MAIN ITEM NUMBER 1 */}
       <Accordion
         type="single"
         collapsible
-        className="flex-col items-center gap-2 mb-1"
+        className="flex-col items-center gap-2"
       >
         <AccordionItem value="item-1" className="">
           <AccordionTrigger className="text-white text-base font-medium bg-gray-800 md:bg-transparent w-full border-b border-t border-color px-7">
@@ -30,8 +30,8 @@ const AboutItem = () => {
             />
             <h1>hobbies</h1>
           </AccordionTrigger>
-          <AccordionContent className="py-4">
-            <div className="py-1">
+          <AccordionContent className="">
+            <div className="py-1 cursor-pointer">
               <div className="flex items-center pl-6 py-2 text-sm bg-white/5 rounded-xl hover:bg-red-500">
                 <Image
                   className="mb-1 mr-2"
@@ -44,7 +44,7 @@ const AboutItem = () => {
               </div>
             </div>
 
-            <div className="py-1">
+            <div className="py-1 cursor-pointer">
               <div className="flex items-center pl-6 py-2 text-sm bg-white/5 rounded-xl hover:bg-red-500">
                 <Image
                   className="mb-1 mr-2"
@@ -76,8 +76,8 @@ const AboutItem = () => {
             />
             <h1>contacts</h1>
           </AccordionTrigger>
-          <AccordionContent className="py-4">
-            <div className="py-1">
+          <AccordionContent className="">
+            <div className="py-1 cursor-pointer">
               <div className="flex items-center pl-6 py-2 text-sm bg-white/5 rounded-xl hover:bg-red-500">
                 <Image
                   className="mb-1 mr-2"
@@ -90,7 +90,7 @@ const AboutItem = () => {
               </div>
             </div>
 
-            <div className="py-1">
+            <div className="py-1 cursor-pointer">
               <div className="flex items-center pl-6 py-2 text-sm bg-white/5 rounded-xl hover:bg-red-500">
                 <Image
                   className="mb-1 mr-2"
