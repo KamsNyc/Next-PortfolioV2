@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link href={"/work"}>_projects</Link>
             </li>
             <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
-              <Link href={"/"}>_contact-me</Link>
+              <Link href={"/contact"}>_contact-me</Link>
             </li>
           </ul>
         )}

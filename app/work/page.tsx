@@ -33,14 +33,15 @@ const page = () => {
             height={12}
             alt="Picture of the author"
           />
-          personal-info
+          projects
+        </section>
+        
+
+        {/* CONTENT */}
+        <section>
+          check out more projects here
         </section>
 
-
-        
-        {/* HOBBY AND CONTACT FOLDERS */}
-
-        <AboutItem />
 
    
       </section>
@@ -55,9 +56,9 @@ const page = () => {
 <div className="absolute bottom-1 left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out text-[14px] md:text-base">
 <TooltipProvider>
 <Tooltip>
-  <TooltipTrigger><Link href={'/work'}>Project &gt;</Link></TooltipTrigger>
+  <TooltipTrigger><Link href={'/contact'}>Contact &gt;</Link></TooltipTrigger>
   <TooltipContent>
-    <p>check out my projects</p>
+    <p>contact me</p>
   </TooltipContent>
 </Tooltip>
 </TooltipProvider>

@@ -23,7 +23,7 @@ export default function Home() {
       
   
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-44 lg:pt-36 gap-4 md:gap-8 xl:gap-16">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-44 lg:pt-36 xl:pt-52 gap-4 md:gap-8 xl:gap-16">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
       <p className="text-lg xl:text-xl">What&apos;s up!, I&apos;m </p>
@@ -60,7 +60,7 @@ export default function Home() {
           <p className="py-1 text-[#4D5BCE]">
             <span className="text-[#43D9AD]">const </span>contactButton <span className="text-white">=</span>
           </p>
-          <Button className="cursor-pointer ml-2 text-[#fff]" variant="outline">
+          <Button className="z-30 cursor-pointer ml-2 text-[#fff]" variant="outline">
             Let&apos;s talk
           </Button>
         </div>
@@ -76,7 +76,7 @@ export default function Home() {
   
   
   {/* NEXT PAGE TOOL TIP */}
-  <div className="absolute bottom-20 md:bottom-[.45px] left-1/2 translate-x-[-50%] z-10 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out text-[14px] md:text-base">
+  <div className="absolute bottom-20 md:bottom-1 left-1/2 translate-x-[-50%] z-30 text-white bg-[#607B96]/20 py-1 px-[.25rem] rounded-xl cursor-pointer hover:scale-105 duration-300 ease-in-out text-[14px] md:text-base">
   <TooltipProvider>
   <Tooltip>
     <TooltipTrigger><Link href={'/about'}>About Me &gt;</Link></TooltipTrigger>
@@ -88,7 +88,7 @@ export default function Home() {
   </div>
 
    {/* FOOTER */}
-   <div className="absolute bottom-0 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 z-30 "><Footer /></div>
+   <div className="absolute bottom-0 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 z-20 "><Footer /></div>
 {/* BACKGROUND BLUR IMAGES */}
 <Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 z-[1]  " />
   <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60 z-[1]  " />
