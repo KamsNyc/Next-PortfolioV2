@@ -33,10 +33,10 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
     <section className="md:flex w-full h-full">
       {/* LEFT SPLIT */}
 
-      <section className="md:flex-[50%] flex flex-col relative">
+      <section className="md:flex-[50%] flex flex-col relative ">
         {/* TOPSIDE DESKTOP */}
-        <section className="link-color hidden md:flex items-center border-b border-r border-color">
-          <div className="flex items-center px-4 h-full py-[4.20px] border-r border-color cursor-pointer">
+        <section className="link-color hidden md:flex items-center border-b border-r border-color ">
+          <div className="flex items-center px-4 h-full py-[4.20px] border-r border-color cursor-pointer gap-3">
             {`${selectedItem}`}
             <AiOutlineClose size={16} />
           </div>
