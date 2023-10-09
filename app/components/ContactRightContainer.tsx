@@ -15,14 +15,21 @@ const WorkRightContainer = () => {
     <section className="md:flex w-full h-full">
       {/* LEFT SPLIT */}
 
-      <section className="flex-col relative w-full ">
+      <section className="flex-col relative w-full pt-5 md:pt-0 ">
         {/* TOPSIDE DESKTOP */}
-        <section className="link-color hidden md:flex items-center border-b border-r border-color ">
+        <section className="link-color flex items-center border-b border-r border-t border-color ">
           <div
             className='flex items-center px-4 h-full py-[4.20px] border-r border-color cursor-pointer gap-3'
             
           >
-            this will be my filter
+            filter 1
+          </div>
+
+          <div
+            className='flex items-center px-4 h-full py-[4.20px] border-r border-color cursor-pointer gap-3'
+            
+          >
+            filter 2
           </div>
 
         </section>

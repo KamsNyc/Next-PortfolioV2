@@ -32,7 +32,7 @@ const page = () => {
             height={12}
             alt="Picture of the author"
           />
-          projects
+          contact
         </section>
         
           {/* CONTENT */}
