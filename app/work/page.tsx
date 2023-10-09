@@ -24,7 +24,7 @@ const page = () => {
       <section className="flex-[20%] border-r border-color">
         {/* SMALL MENU ITEM */}
         <section
-          className={`flex items-center gap-2 py-1 px-7 bg-gray-800 md:bg-transparent border-b border-color link-color'
+          className={`flex gap-2 items-center py-1 px-7 bg-gray-800 md:bg-transparent border-b border-color link-color'
           }`}
         >
           <Image
@@ -37,9 +37,21 @@ const page = () => {
         </section>
         
 
-        {/* CONTENT */}
-        <section>
-          check out more projects here
+        {/* CONTAINER CONTENT */}
+        <section className='mt-2  pl-7 '>
+          <p className='tracking-tight link-color'>scroll through my projects</p>
+        </section>
+
+        {/* CONTAINER BOTTOM SECTION */}
+        <section className='px-7'>
+
+          {/* CONTAINER ITEMS */}
+          <div className="">1</div>
+          <div className="">1</div>
+          <div className="">1</div>
+          <div className="">1</div>
+          <div className="">1</div>
+          <div className="">1</div>
         </section>
 
 

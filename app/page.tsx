@@ -23,23 +23,23 @@ export default function Home() {
       
   
   {/* CONTAINER */}
-  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-44 lg:pt-36 xl:pt-52 gap-4 md:gap-8 xl:gap-16">
+  <section className="md:flex justify-center items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-44 lg:pt-36 xl:pt-52 gap-4 md:gap-8 xl:gap-16 h-screen">
     {/* LEFT SIDE */}
     <div className="w-full z-10">
-      <p className="text-lg xl:text-xl">What&apos;s up!, I&apos;m </p>
+      <p className="text-lg xl:text-xl z-30">What&apos;s up!, I&apos;m </p>
 
       {/* HEADING/AVATAR WRAPPER */}
       <div id="wrapper" className="flex items-center w-full justify-between sm:gap-4">
-        <h1 className="text-7xl md:text-7xl tracking-wide lg:tracking-tighter py-2 lg:py-0 font-base ml-[-.5rem]">Kamel Singh</h1>
+        <h1 className="text-7xl md:text-7xl tracking-wide lg:tracking-tighter py-2 lg:py-0 font-base ml-[-.5rem] z-30">Kamel Singh</h1>
         <Avatar className="w-32 h-32 lg:hidden">
           <AvatarImage className="" src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
-      <h3 className="text-xl xl:text-2xl text-[#43D9AD]">&gt; full-stack developer</h3>
+      <h3 className="text-xl xl:text-2xl text-[#43D9AD] z-30">&gt; full-stack developer</h3>
 
       {/* DESKTOP SUBTITLE */}
-      <div className="pt-10 hidden md:block text-[#607B96] tracking-wide ">
+      <div className="pt-10 hidden md:block text-[#607B96] tracking-wide z-30 ">
         <p className="">&gt; your future fullstack developer </p>
         <p className=" mb-4">&gt; designing and deploying websites </p>
         <div id="wrapper" className="flex">
@@ -53,7 +53,7 @@ export default function Home() {
       </div>
 
       {/* MOBILE SUBTITLE */}
-      <div className="absolute bottom-[25%] md:hidden text-[#607B96] tracking-wide z-10">
+      <div className="absolute bottom-[25%] md:hidden text-[#607B96] tracking-wide z-30">
         <p className="py-1">&gt; your future fullstack developer </p>
         <p className="pb-4">&gt; designing and deploying websites </p>
         <div id="wrapper" className="flex">
@@ -68,7 +68,7 @@ export default function Home() {
     </div>
 
     {/* RIGHT SIDE */}
-    <div className="hidden md:flex items-center justify-center w-full pt-8 md:pt-0">
+    <div className="hidden md:flex items-center justify-center w-full pt-8 md:pt-0 z-30">
       <Comingsoon />
     </div>
   </section>
