@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Comingsoon from "./Comingsoon";
+import Link from "next/link";
 
 // Define the prop type for selectedItem
 type AboutRightContainerProps = {
@@ -35,7 +36,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
       <section className="md:flex-[50%] flex flex-col relative">
         {/* TOPSIDE DESKTOP */}
         <section className="link-color hidden md:flex items-center border-b border-r border-color">
-          <div className="flex items-center px-4 py-[4.20px] border-r border-color cursor-pointer">
+          <div className="flex items-center px-4 h-full py-[4.20px] border-r border-color cursor-pointer">
             {`${selectedItem}`}
             <AiOutlineClose size={16} />
           </div>
@@ -54,7 +55,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] px-7 py-4 max-h-[210px] md:max-h-[670px] md:overflow-y-hidden link-color"
+          className="md:flex-[50%] px-7 py-4 max-h-[410px] md:max-h-[670px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto",
           }}
@@ -70,7 +71,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
         <section className="link-color flex items-center md:border-b border-color ">
           <div className="flex items-center gap-6 px-7 h-full py-[5.4px] ">
             <h1 className="text-white text-[14px] md:text-[#011627]">
-              &gt; code snippets showcase:
+              <Link className="hover:scale-105 hover:bg-red-500 duration-500 cursor-pointer ease-in-out" href={'/work'}>&gt; click here to see all of my projects:</Link> 
             </h1>
           </div>
         </section>

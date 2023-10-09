@@ -46,14 +46,14 @@ export default function Home() {
           <p className="py-1 text-[#4D5BCE]">
             <span className="text-[#43D9AD]"><span className='text-[#607B96]'></span>const </span>contactButton <span className="text-[#607B96]">=</span>
           </p>
-          <Button className="cursor-pointer ml-4 text-[#fff]" variant="outline">
+          <Button className=" z-30 cursor-pointer ml-4 text-[#fff]" variant="outline">
             Let&apos;s talk
           </Button>
         </div>
       </div>
 
       {/* MOBILE SUBTITLE */}
-      <div className="absolute bottom-[25%] md:hidden text-[#607B96] tracking-wide">
+      <div className="absolute bottom-[25%] md:hidden text-[#607B96] tracking-wide z-10">
         <p className="py-1">&gt; your future fullstack developer </p>
         <p className="pb-4">&gt; designing and deploying websites </p>
         <div id="wrapper" className="flex">
@@ -88,10 +88,10 @@ export default function Home() {
   </div>
 
    {/* FOOTER */}
-   <div className="absolute bottom-0 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 "><Footer /></div>
+   <div className="absolute bottom-0 w-full left-0 px-2 border-t border-color md:px-14 xl:px-32 2xl:px-60 z-30 "><Footer /></div>
 {/* BACKGROUND BLUR IMAGES */}
-<Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 z-0" />
-  <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60 z-0 " />
+<Image src="/Green.png" fill alt="green blur" className="absolute top-0 left-0 opacity-40 z-[1]  " />
+  <Image src="/Blue.png" fill alt="blue blur" className="absolute top-0 right-0 opacity-60 z-[1]  " />
 
 </main>
   
