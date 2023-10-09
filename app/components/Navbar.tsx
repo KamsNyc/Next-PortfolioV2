@@ -16,19 +16,19 @@ const Navbar = () => {
         <div>
           <Link className={`flex items-center px-8 cursor-pointer`} href={"/"}>kamel-singh</Link>
         </div>
-        <ul className="flex">
-          <li className={`flex items-center justify-center px-8 cursor-pointer`}>
-            <Link href={"/"}>_hello</Link>
-          </li>
-          <li className={`px-8 flex items-center justify-center cursor-pointer`}>
-            <Link href={"/about"}>_about-me</Link>
-          </li>
-          <li className={`px-8 flex items-center justify-center cursor-pointer`}>
-            <Link href={"/work"}>_projects</Link>
-          </li>
-          <li className={`flex items-center justify-center px-8 cursor-pointer`}>
-            <Link href={"/"}>_contact-me</Link>
-          </li>
+        <ul className="flex ">
+        <Link href={"/"}><li className={`flex items-center justify-center px-8 cursor-pointer hover:text-white`}>
+            _hello
+          </li></Link>
+          <Link href={"/about"}><li className={`px-8 flex items-center justify-center cursor-pointer hover:text-white`}>
+            _about-me
+          </li></Link>
+          <Link href={"/work"}><li className={`px-8 flex items-center justify-center cursor-pointer hover:text-white`}>
+            _projects
+          </li></Link>
+          <Link href={"/contact"}><li className={`flex items-center justify-center px-8 cursor-pointer hover:text-white`}>
+            _contact-me
+          </li></Link>
         </ul>
       </div>
       {/* Mobile Navbar */}
@@ -56,17 +56,17 @@ const Navbar = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <ul className="py-2 absolute top-12 left-0 w-full bg-black/80 z-40 backdrop-blur-md">
-            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
+          <ul className="py-2 absolute h-[745px] top-12 left-0 w-full bg-[#011627] z-40 backdrop-blur-md">
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color hover:bg-gray-800 hover:text-white' : ''}`}>
               <Link href={"/"}>_hello</Link>
             </li>
-            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color hover:bg-gray-800 hover:text-white' : ''}`}>
               <Link href={"/about"}>_about-me</Link>
             </li>
-            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color hover:bg-gray-800 hover:text-white' : ''}`}>
               <Link href={"/work"}>_projects</Link>
             </li>
-            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color' : ''}`}>
+            <li className={`py-2 pl-5 my-1 ${isMenuOpen ? 'border border-color hover:bg-gray-800 hover:text-white' : ''}`}>
               <Link href={"/contact"}>_contact-me</Link>
             </li>
           </ul>
