@@ -4,11 +4,10 @@ import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-
 const WorkRightContainer = () => {
-  const [selectedTab, setSelectedTab] = useState("projects");
+  const [selectedTab, setSelectedTab] = useState<string>("projects"); // Specify the type as string
 
-  const handleTabClick = (tab) => {
+  const handleTabClick = (tab: string) => {
     setSelectedTab(tab);
   };
 
