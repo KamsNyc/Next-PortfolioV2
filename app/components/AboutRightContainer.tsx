@@ -29,13 +29,13 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
   }
 
   return (
-    <section className="md:flex w-full">
+    <section className="md:flex w-full h-full">
       {/* LEFT SPLIT */}
 
       <section className="md:flex-[50%] flex flex-col relative">
         {/* TOPSIDE DESKTOP */}
         <section className="link-color hidden md:flex items-center border-b border-r border-color">
-          <div className="flex items-center gap-6 px-4 h-full py-[4.20px] border-r border-color cursor-pointer">
+          <div className="flex items-center px-4 py-[4.20px] border-r border-color cursor-pointer">
             {`${selectedItem}`}
             <AiOutlineClose size={16} />
           </div>
@@ -77,23 +77,6 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
           
           {/*MOBILE CONTENT */}
         
-          <ScrollArea className="block md:hidden justify-center items-center h-[225px] pt-2 px-6 link-color">
-          <h1 className="text-4xl">COMING SOON</h1>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-          <p className="text-[14px]">test</p>
-
-        </ScrollArea>
 
          {/*DESKTOP CONTENT */}
         
