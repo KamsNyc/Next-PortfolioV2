@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaHandRock, FaHandPaper, FaHandScissors } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
+import Link from 'next/link'; // Import Link from Next.js
 
 enum Choice {
   Rock = 'rock',
@@ -149,7 +149,7 @@ const Game = () => {
                 </button>
 
   
-                  <Link target='_blank' href={'/contact'} className="bg-green-500 text-white hover:bg-green-600 px-4 py-2 rounded-md ml-2">
+                  <Link target='' href={'/contact'} className="bg-green-500 text-white hover:bg-green-600 px-4 py-2 rounded-md ml-2">
                     Let's Talk
                     </Link>
               </div>
