@@ -1,8 +1,8 @@
 'use client'
-
 import React, { useState, useEffect } from 'react';
 import { FaHandRock, FaHandPaper, FaHandScissors } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 enum Choice {
   Rock = 'rock',
@@ -13,41 +13,41 @@ enum Choice {
 const GameChoices = [Choice.Rock, Choice.Paper, Choice.Scissors];
 const RoundsToWin = 3;
 
-const Comingsoon = () => {
+const Game = () => {
   const [userChoice, setUserChoice] = useState<string | null>(null);
-  const [computerChoice, setComputerChoice] = useState<string | null>(null);
+  const [kamelChoice, setKamelChoice] = useState<string | null>(null);
   const [result, setResult] = useState<string | null>(null);
   const [roundsPlayed, setRoundsPlayed] = useState(0);
   const [userWins, setUserWins] = useState(0);
-  const [computerWins, setComputerWins] = useState(0);
+  const [kamelWins, setKamelWins] = useState(0);
   const [loading, setLoading] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
 
   useEffect(() => {
     if (roundsPlayed === RoundsToWin) {
-      if (userWins > computerWins) {
+      if (userWins > kamelWins) {
         setResult('You won the game! 🎉 Let\'s chat over coffee!');
-      } else if (computerWins > userWins) {
+      } else if (kamelWins > userWins) {
         setResult('Kamel won the game. Try again!');
       } else {
         setResult('It\'s a tie game. Try again!');
       }
     }
-  }, [roundsPlayed, userWins, computerWins]);
+  }, [roundsPlayed, userWins, kamelWins]);
 
   const startGame = () => {
     setGameStarted(true);
     setRoundsPlayed(0);
     setUserWins(0);
-    setComputerWins(0);
+    setKamelWins(0);
     setResult(null);
   };
 
   const handleChoice = (choice: string) => {
     if (!loading && gameStarted) {
-      const computerRandomChoice = GameChoices[Math.floor(Math.random() * GameChoices.length)];
+      const kamelRandomChoice = GameChoices[Math.floor(Math.random() * GameChoices.length)];
       setUserChoice(choice);
-      setComputerChoice(computerRandomChoice);
+      setKamelChoice(kamelRandomChoice);
 
       const winConditions: Record<string, string> = {
         [Choice.Rock]: Choice.Scissors,
@@ -55,14 +55,14 @@ const Comingsoon = () => {
         [Choice.Scissors]: Choice.Paper,
       };
 
-      if (choice === computerRandomChoice) {
+      if (choice === kamelRandomChoice) {
         setResult("It's a tie!");
-      } else if (winConditions[choice] === computerRandomChoice) {
+      } else if (winConditions[choice] === kamelRandomChoice) {
         setResult('You win this round!');
         setUserWins(userWins + 1);
       } else {
-        setResult('Computer wins this round!');
-        setComputerWins(computerWins + 1);
+        setResult('Kamel wins this round!');
+        setKamelWins(kamelWins + 1);
       }
 
       setRoundsPlayed(roundsPlayed + 1);
@@ -74,6 +74,16 @@ const Comingsoon = () => {
         }, 1000);
       }
     }
+  };
+
+  const replayGame = () => {
+    setGameStarted(false);
+    setUserChoice(null);
+    setKamelChoice(null);
+    setResult(null);
+    setRoundsPlayed(0);
+    setUserWins(0);
+    setKamelWins(0);
   };
 
   return (
@@ -95,7 +105,7 @@ const Comingsoon = () => {
         {gameStarted && roundsPlayed < RoundsToWin && !loading && (
           <>
             <p className="text-lg text-gray-300 mb-2">Choose your weapon:</p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center">
               <motion.button
                 className={`text-3xl text-white hover:text-gray-300 transition duration-300 ${
                   userChoice === Choice.Rock ? 'text-gray-300' : ''
@@ -126,21 +136,30 @@ const Comingsoon = () => {
             </div>
           </>
         )}
-      </div>
-      <AnimatePresence>
         {result && (
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 100 }}
-            className="text-center"
-          >
+          <>
             <p className="text-2xl text-white mt-4">{result}</p>
-          </motion.div>
+            {roundsPlayed === RoundsToWin && (
+              <div>
+                <button
+                  className="bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-md mt-4"
+                  onClick={replayGame}
+                >
+                  Replay
+                </button>
+
+  
+                  <Link target='_blank' href={'/contact'} className="bg-green-500 text-white hover:bg-green-600 px-4 py-2 rounded-md ml-2">
+                    Let's Talk
+                    </Link>
+              </div>
+            )}
+          </>
         )}
-      </AnimatePresence>
+      </div>
+      <AnimatePresence></AnimatePresence>
     </div>
   );
 };
 
-export default Comingsoon;
+export default Game;
