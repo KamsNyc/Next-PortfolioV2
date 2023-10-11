@@ -39,35 +39,7 @@ const CardScroll = () => {
           )}
         </AnimatePresence>
 
-        <AnimatePresence initial={false}>
-          {scrollY < 1 ? (
-            <motion.div
-              key="card2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-            >
-              <Card />
-            </motion.div>
-          ) : (
-            <Card />
-          )}
-        </AnimatePresence>
 
-        <AnimatePresence initial={false}>
-          {scrollY < 1 ? (
-            <motion.div
-              key="card3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-            >
-              <Card />
-            </motion.div>
-          ) : (
-            <Card />
-          )}
-        </AnimatePresence>
       </div>
     </section>
   );

@@ -81,12 +81,13 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
 
          {/*DESKTOP CONTENT */}
         
-         <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center">
-          <div className="w-full md:mb-14 ">
+         <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center relative">
+          <div className="w-full md:mb-14">
           
           {/* CONTENT */}
           <CardScroll /> 
-          {/* SCROLL */}
+          <div className="w-60 h-8 rounded-xl absolute bg-red-500 top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center cursor-pointer hover:scale-110 duration-300 ease-in">Create Review</div>
+       
 
           </div>
 

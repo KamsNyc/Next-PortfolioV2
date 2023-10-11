@@ -5,6 +5,7 @@ import React from "react";
 const Card = () => {
   return (
     <section className=" w-full rounded-xl px-0 xl:px-6]">
+
       {/* TOPSIDE */}
       <div className="flex justify-between px-2 pt-2 pb-4">
         {/* LEFT SIDE */}
