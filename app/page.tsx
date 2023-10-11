@@ -11,6 +11,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Card from "./components/Card";
+import testReview from './components/testReview';
 
 export default function Home() {
   return (
