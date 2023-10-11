@@ -31,7 +31,6 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
   }
 
 
-
   return (
     <section className="md:flex w-full h-full">
       {/* LEFT SPLIT */}
