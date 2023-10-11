@@ -1,50 +1,39 @@
 //load env
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
 }
 
-
 //import dependencies
-const express = require('express')
-const connectToDb = require('./config/connectToDb');
-const Review = require('./models/reviewModel');
-
+const express = require("express");
+const connectToDb = require("./config/connectToDb");
+const reviewsController = require("./controllers/reviewController");
+const cors = require("cors");
 
 //create app
-const app = express()
+const app = express();
 connectToDb();
+
 
 //config express
 app.use(express.json());
-
+app.use(cors())
 
 //routing
-app.get('/', (req, res) => {
-    res.json({hello: 'world'})
-});
 
-app.post('/reviews', async (req, res) => {
-    //get sent in data off request body
-    const title = req.body.title
-    const createdAt = req.body.title
-    const link = req.body.title
-    const isStar = req.body.title
-    //create a review
+//ALLOW TO GET ONE REVIEW BY ID: (SINGLE REVIEW)
+app.get("/review/:id", reviewsController.fetchReview);
 
-    const review = await Review.create({
-        title: title,
-        createdAt: createdAt,
-        link: link,
-        isStar: isStar,
-    })
+//ALLOW TO GET ALL OF THE REVIEWS THAT ARE THERE (LIST OF ALL NOTES)
+app.get("/review", reviewsController.fetchReviews);
 
+//ALLOW USERS TO CREATE REVIEW
+app.post("/review", reviewsController.createReview);
 
+//ALLOW TO UPDATE A REVIEW BY ID
+app.put("/review/:id", reviewsController.updateReview);
 
-    //respond with the new review
-    res.json
-} )
-
-
+//ALLOW TO DELETE A REVIEW
+app.delete("/review/:id", reviewsController.deleteReview);
 
 //start server
 
