@@ -113,6 +113,32 @@ const Sidebar = () => {
   </div>
 </div>
 
+{/* ITEMS 4 */}
+<div
+  className={`${
+    selectedItem === 'reviews' ? 'bg-gray-800' : ''
+  }`}
+  onClick={() => handleItemClick('reviews')}
+>
+  <div className={`flex md:hidden items-center px-7 py-1 text-[#607B96] cursor-pointer ${selectedItem === 'skills' ? 'text-white' : ''}`}>
+    <Image
+      className="mb-1 mr-3"
+      src="/ArrowRightOl.png"
+      width={10}
+      height={10}
+      alt="Picture of the author"
+    />
+    <Image
+      className="mb-1 mr-2"
+      src="/PurpleFolder.png"
+      width={15}
+      height={15}
+      alt="Picture of the author"
+    />
+    reviews
+  </div>
+</div>
+
         {/* HOBBY AND CONTACT FOLDERS */}
 
         <AboutItem />

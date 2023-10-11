@@ -27,6 +27,8 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
     content = "This is my interests for now.";
   } else if (selectedItem === "skills") {
     content = "This is my skills content.";
+  } else if (selectedItem === "reviews") {
+    content =  <Card />;
   }
 
   return (
@@ -82,7 +84,7 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
          {/*DESKTOP CONTENT */}
         
          <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center">
-          <div className="w-full  ">
+          <div className="w-full ">
           
           {/* CONTENT */}
           <Card />
