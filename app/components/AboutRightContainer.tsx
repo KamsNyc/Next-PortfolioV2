@@ -85,7 +85,8 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
           <div className="w-full ">
           
           {/* CONTENT */}
-          <CardScroll />
+          <CardScroll /> 
+          {/* SCROLL */}
 
           </div>
 
