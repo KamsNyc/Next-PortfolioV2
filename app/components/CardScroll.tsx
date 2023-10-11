@@ -7,8 +7,8 @@ import Card from './Card';
 const CardScroll = () => {
   const [scrollY, setScrollY] = useState(0);
 
-  const handleScroll = (event) => {
-    setScrollY(event.target.scrollTop);
+  const handleScroll = (event: React.SyntheticEvent<HTMLDivElement>) => {
+    setScrollY(event.currentTarget.scrollTop);
   };
 
   return (
