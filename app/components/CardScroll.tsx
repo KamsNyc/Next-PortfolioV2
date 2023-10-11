@@ -15,7 +15,7 @@ const CardScroll = () => {
 
 
   return (
-    <section className='w-full max-h-[600px] py-4 px-4'>
+    <section className='w-full max-h-[550px] py-4 px-4'>
       <ScrollArea
       
         onScroll={handleScroll}

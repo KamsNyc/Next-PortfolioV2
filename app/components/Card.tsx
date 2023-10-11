@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import Image from "next/image";
 import React from "react";
 
@@ -57,20 +58,17 @@ const Card = () => {
 
       {/* BOTTOMSIDE */}
 
-      <div className="bg-[#011221] flex justify-center px-20 tracking-tight py-4 text-[14px] max-h-[150px] overflow-y-auto border border-color rounded-xl mb-4">
+      <ScrollArea className="bg-[#011221] flex justify-center px-5 md:px-20 tracking-tight py-4 text-[14px] max-h-[200px]  border border-color rounded-xl mb-4 link-color">
         <h2>
-          THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A
-          REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS
-          A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS
+        
           IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW,
           THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A
-          REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS
-          A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS
+          REVIEW, THIS IS A REVIEW, THIS IS A REVIEW,
           IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW,
           THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A REVIEW, THIS IS A
           REVIEW, THIS IS A REVIEW, THIS IS A REVIEW,
         </h2>
-      </div>
+      </ScrollArea >
 
      
     </section>
