@@ -3,6 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 import Card from "./Card";
+import CardScroll from "./CardScroll";
 
 type AboutRightContainerProps = {
   selectedItem: string;
@@ -24,7 +25,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   } else if (selectedItem === "skills") {
     content = "This is my skills content.";
   } else if (selectedItem === "reviews") {
-    content = <Card />;
+    content = <CardScroll />;
   }
 
 
@@ -84,7 +85,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
           <div className="w-full ">
           
           {/* CONTENT */}
-          <Card />
+          <CardScroll />
 
           </div>
 

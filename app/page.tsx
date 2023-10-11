@@ -11,6 +11,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Card from "./components/Card";
+import CardScroll from "./components/CardScroll";
 
 export default function Home() {
   return (
@@ -69,7 +70,7 @@ export default function Home() {
         <div className="hidden md:flex items-center justify-center w-full pt-8 md:pt-0 z-30">
           
           {/* CONTENT */}
-          <Card />
+          <CardScroll />
 
         </div>
       </section>
