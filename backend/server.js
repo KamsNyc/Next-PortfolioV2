@@ -1,16 +1,26 @@
-// i want to import my depedencies #1
+//load env
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
+
+
+//import dependencies
 const express = require('express')
+const connectToDb = require('./config/connectToDb');
 
-//create the express app #2
+
+//create app
 const app = express()
+connectToDb();
 
 
-
-
-
-
-//start the server
-let PORT = 8000
-app.listen(PORT, () => {
-    console.log(`backend running on ${PORT}`)
+//routing
+app.get('/', (req, res) => {
+    res.json({hello: 'world'})
 });
+
+
+
+//start server
+
+app.listen(process.env.PORT);
