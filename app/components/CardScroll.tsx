@@ -1,4 +1,3 @@
-'use client'
 import { motion, AnimatePresence } from 'framer-motion';
 import Card from './Card';
 
@@ -60,6 +59,7 @@ const CardScroll = () => {
             <Card />
           )}
         </AnimatePresence>
+        {/* test */}
       </div>
     </section>
   );
