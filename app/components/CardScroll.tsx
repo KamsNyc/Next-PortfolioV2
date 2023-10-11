@@ -1,10 +1,15 @@
 'use client'
 
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Card from './Card';
 
 const CardScroll = () => {
+  const [scrollY, setScrollY] = useState(0);
 
+  const handleScroll = (event) => {
+    setScrollY(event.target.scrollTop);
+  };
 
   return (
     <section className='w-full max-h-[450px] py-4'>
@@ -15,7 +20,7 @@ const CardScroll = () => {
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
         }}
-
+        onScroll={handleScroll}
       >
         <AnimatePresence initial={false}>
           {scrollY < 1 ? (
@@ -61,7 +66,6 @@ const CardScroll = () => {
             <Card />
           )}
         </AnimatePresence>
-        {/* test */}
       </div>
     </section>
   );
