@@ -11,6 +11,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Card from "./components/Card";
 
 export default function Home() {
   return (
@@ -67,7 +68,10 @@ export default function Home() {
 
         {/* RIGHT SIDE */}
         <div className="hidden md:flex items-center justify-center w-full pt-8 md:pt-0 z-30">
-          <Comingsoon />
+          
+          {/* CONTENT */}
+          <Card />
+
         </div>
       </section>
 

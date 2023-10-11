@@ -1,8 +1,8 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import Comingsoon from "./Comingsoon";
 import Link from "next/link";
+import Card from "./Card";
 
 // Define the prop type for selectedItem
 type AboutRightContainerProps = {
@@ -82,8 +82,11 @@ I recently discovered I could make fudge with just chocolate chips, sweetened co
          {/*DESKTOP CONTENT */}
         
          <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center">
-          <div className="flex-col ">
-          <Comingsoon />
+          <div className="w-full  ">
+          
+          {/* CONTENT */}
+          <Card />
+
           </div>
 
         </section>
