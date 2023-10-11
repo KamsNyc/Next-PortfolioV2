@@ -65,7 +65,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
       </section>
 
       {/* RIGHT SPLIT */}
-      <section className="md:flex-[50%] border-l border-color mt-4 md:mt-0 w-full ">
+      <section className="md:flex-[50%] border-l border-color mt-4 md:mt-0 w-full">
        
         {/* TOPSIDE DESKTOP */}
         <section className="link-color flex items-center md:border-b border-color ">
@@ -82,7 +82,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
          {/*DESKTOP CONTENT */}
         
          <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center">
-          <div className="w-full ">
+          <div className="w-full md:mb-14 ">
           
           {/* CONTENT */}
           <CardScroll /> 

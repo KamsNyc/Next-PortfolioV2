@@ -11,11 +11,13 @@ const CardScroll = () => {
     setScrollY(event.currentTarget.scrollTop);
   };
 
+
+
   return (
     <section className='w-full max-h-[450px] py-4'>
       <div
         style={{
-          height: '450px',
+          height: '400px',
           overflowY: 'scroll',
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',

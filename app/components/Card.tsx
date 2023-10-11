@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <section className=" w-full rounded-xl px-0 xl:px-6">
+    <section className=" w-full rounded-xl px-0 xl:px-6]">
       {/* TOPSIDE */}
       <div className="flex justify-between px-2 pt-2 pb-4">
         {/* LEFT SIDE */}
@@ -71,11 +71,7 @@ const Card = () => {
         </h2>
       </div>
 
-      {/* COMMENT BOX */}
-
-      {/* <div className="bg-[#011221] flex justify-center px-20 tracking-tight text-[13px] link-color py-1  border-t-2 border-color rounded-xl">
-        <h2>my comments </h2>
-      </div> */}
+     
     </section>
   );
 };
