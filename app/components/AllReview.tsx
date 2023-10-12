@@ -42,7 +42,7 @@ const AllReview = () => {
                 <div className="flex gap-4 items-center">
                   <Avatar className="">
                     <AvatarImage className="" src="" />
-                    <AvatarFallback className="bg-[#4D5BCE]">
+                    <AvatarFallback className="bg-[#4D5BCE] text-white border-2 border-color font-bold">
                       {review.name.charAt(0)}
                     </AvatarFallback>
                   </Avatar>

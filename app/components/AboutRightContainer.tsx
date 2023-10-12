@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
@@ -8,6 +9,8 @@ import AllReview from "./AllReview";
 type AboutRightContainerProps = {
   selectedItem: string;
 };
+
+
 
 const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   selectedItem,
@@ -27,6 +30,8 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   } else if (selectedItem === "reviews") {
     content = <AllReview />;
   }
+
+  const [showReviewBox, setShowReviewBox] = useState(false);
 
 
   return (
@@ -81,15 +86,47 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
 
          {/*DESKTOP CONTENT */}
         
-         <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center relative">
+         <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center ">
           <ScrollArea className="w-full md:mb-14">
           
           {/* CONTENT */}
           <AllReview />
-          <div className="w-60 h-8 rounded-xl absolute bg-white/10 hover:bg-black/70 text-white/30 hover:text-white bottom-5 left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center cursor-pointer hover:scale-110 duration-300 ease-in">Write Review</div>
+
+
+          {/* WRITE REVIEW CONTAINER */}
+          <div onClick={ () => {setShowReviewBox(true)}}  
+          className="w-60 h-8 rounded-xl absolute bg-white/10 hover:bg-black/70 text-white/30 hover:text-white bottom-5 left-[50%] translate-x-[-50%] translate -y-[-50%] flex items-center justify-center cursor-pointer hover:scale-110 duration-300 ease-in">Write Review</div>
+
+          
        
 
           </ScrollArea>
+
+
+
+            {/* CREATE REVIEW OPEN */}
+          <section className='relative'>   
+          {showReviewBox && (
+  <div className="fixed top-1/2 left-1/2 transform w-[300px] h-[500px] -translate-x-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-[2px] p-4 rounded-md shadow-lg">
+    
+
+
+
+
+     {/* CLOSE BUTTON */}
+     <button className="absolute top-0 left-0 "
+  onClick={() => {
+    setShowReviewBox(false); // Close the review box
+  }}
+>
+  Close
+</button>
+  </div>
+)}
+
+          </section>
+
+         
 
         </section>
        
