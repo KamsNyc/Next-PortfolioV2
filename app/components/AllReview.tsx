@@ -12,11 +12,10 @@ interface Review {
   date: string;
   name: string;
   body: string;
- 
 }
 
 const AllReview = () => {
-  const [reviews, setReviews] = useState(null);
+  const [reviews, setReviews] = useState<Review[]>([]); // Initialize as an empty array
 
   useEffect(() => {
     fetchReviews();
