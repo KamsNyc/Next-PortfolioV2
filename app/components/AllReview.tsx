@@ -88,7 +88,7 @@ const AllReview = () => {
 
               {/* BOTTOMSIDE */}
               <ScrollArea className="bg-[#011221] flex justify-center px-5 md:px-20 tracking-tight py-6 text-[14px] border border-color rounded-xl mb-4 link-color">
-                <div className="max-h-[150px]">{review.body}</div>
+                <div className="max-h-full md:max-h-[150px]">{review.body}</div>
               </ScrollArea>
             </section>
           ))}
