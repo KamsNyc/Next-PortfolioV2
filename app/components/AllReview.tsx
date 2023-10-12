@@ -6,6 +6,15 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
+interface Review {
+  id: number;
+  title: string;
+  date: string;
+  name: string;
+  body: string;
+ 
+}
+
 const AllReview = () => {
   const [reviews, setReviews] = useState(null);
 
