@@ -11,8 +11,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Card from "./components/Card";
-import CardScroll from "./components/CardScroll";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import AllReview from "./components/AllReview";
 
 export default function Home() {
   return (
@@ -71,7 +71,7 @@ export default function Home() {
         <ScrollArea className="hidden md:flex items-center justify-center w-full pt-8 md:pt-0 z-30 ">
           
           {/* CONTENT */}
-          <div className="p-4"><CardScroll /></div>
+          <div className=""><AllReview /></div>
           
    
           

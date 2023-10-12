@@ -3,7 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 import Card from "./Card";
-import CardScroll from "./CardScroll";
+import AllReview from "./AllReview";
 
 type AboutRightContainerProps = {
   selectedItem: string;
@@ -25,7 +25,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   } else if (selectedItem === "skills") {
     content = "This is my skills content.";
   } else if (selectedItem === "reviews") {
-    content = <CardScroll />;
+    content = <AllReview />;
   }
 
 
@@ -85,7 +85,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
           <ScrollArea className="w-full md:mb-14">
           
           {/* CONTENT */}
-          <CardScroll /> 
+          <AllReview />
           <div className="w-60 h-8 rounded-xl absolute bg-white/10 hover:bg-black/70 text-white/30 hover:text-white bottom-5 left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center cursor-pointer hover:scale-110 duration-300 ease-in">Write Review</div>
        
 

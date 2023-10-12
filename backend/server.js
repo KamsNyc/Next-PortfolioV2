@@ -16,7 +16,8 @@ connectToDb();
 
 //config express
 app.use(express.json());
-app.use(cors())
+app.use(cors());
+
 
 //routing
 
@@ -24,7 +25,7 @@ app.use(cors())
 app.get("/review/:id", reviewsController.fetchReview);
 
 //ALLOW TO GET ALL OF THE REVIEWS THAT ARE THERE (LIST OF ALL NOTES)
-app.get("/review", reviewsController.fetchReviews);
+app.get("/reviews", reviewsController.fetchReviews);
 
 //ALLOW USERS TO CREATE REVIEW
 app.post("/review", reviewsController.createReview);
