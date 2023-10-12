@@ -116,7 +116,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
      {/* CLOSE BUTTON */}
      <button className="absolute top-0 left-0 "
   onClick={() => {
-    setShowReviewBox(false); // Close the review box
+    setShowReviewBox(false);
   }}
 >
   Close

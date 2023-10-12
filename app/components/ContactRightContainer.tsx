@@ -43,7 +43,7 @@ const WorkRightContainer = () => {
             overflowY: "auto",
           }}
         >
-          dada
+          
         </ScrollArea>
       </section>
     </section>
