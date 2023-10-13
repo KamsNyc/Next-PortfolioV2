@@ -35,9 +35,7 @@ const AllReview = () => {
   return (
     <div className='flex items-center justify-center w-full py-2 px-4'>
       <div className="max-h-[400px]">
-        {reviews &&
-          reviews.map(review => (
-            <section className="w-full rounded-xl px-0 xl:px-6" key={review.id}>
+            <section className="w-full rounded-xl px-0 xl:px-6" >
               {/* TOPSIDE */}
               <div className="flex justify-between px-2 pt-2 pb-4">
                 {/* LEFT SIDE */}
@@ -45,14 +43,14 @@ const AllReview = () => {
                   <Avatar className="">
                     <AvatarImage className="" src="" />
                     <AvatarFallback className="bg-[#4D5BCE] text-white border-2 border-color font-bold">
-                      {review.name.charAt(0)}
+                      name
                     </AvatarFallback>
                   </Avatar>
 
-                  <div id="wrapper" className="text-left">
-                    <h1 className="text-[14px] tracking-wide">{review.name}</h1>
+                  <div id="wrapper" className="">
+                    <h1 className="text-[14px] tracking-wide">name</h1>
 
-                    <p className="text-[12px]">{`created ${review.date.slice(0, 10)}`}</p>
+                    <p className="text-[12px]">date</p>
                   </div>
                 </div>
 
@@ -90,10 +88,9 @@ const AllReview = () => {
 
               {/* BOTTOMSIDE */}
               <ScrollArea className="bg-[#011221] flex justify-center px-5 md:px-20 tracking-tight py-6 text-[14px] border border-color rounded-xl mb-4 link-color">
-                <div className="max-h-full md:max-h-[150px] text-[#41B673]">{review.body}</div>
+                <div className="max-h-full md:max-h-[150px] text-[#41B673]">mew review body</div>
               </ScrollArea>
             </section>
-          ))}
       </div>
 
       
