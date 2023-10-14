@@ -147,11 +147,11 @@ const AllReview = () => {
         onClick={() => {
           setShowReviewBox(true);
         }}
-        className="w-60 h-8 rounded-xl absolute bg-white/10 hover:bg-black/70 text-white/30 hover:text-white bottom-5 left-[50%] translate-x-[-50%] translate -y-[-50%] flex items-center justify-center cursor-pointer hover:scale-110 duration-300 ease-in"
+        className="w-60 h-8 rounded-xl absolute bg-white/10 hover:bg-black/70 text-white/30 hover:text-white bottom-5 left-[50%] translate-x-[-50%] translate -y-[-50%] flex items-center justify-center cursor-pointer hover:scale-110 duration-300 ease-in z-20"
       >
         Write Review
       </div>
-      <section className="relative z-30 md:z-2">
+      <section className="relative">
         {showReviewBox && (
           <div className="fixed top-1/2 left-1/2 transform w-[400px] h-[500px] -translate-x-1/2 -translate-y-1/2 bg-white/5 backdrop-blur-[2px] p-2 rounded-md shadow-lg">
             <section id="open__main__container" className="h-full w-full bg-[#011627] rounded-lg">
