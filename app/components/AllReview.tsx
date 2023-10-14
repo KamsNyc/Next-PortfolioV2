@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import Card from './Card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
@@ -33,10 +32,10 @@ const AllReview = () => {
   }, []);
   return (
     <div className='flex items-center justify-center w-full py-2 px-4'>
-      <div className="max-h-[400px] " >
-        {reviews &&
+      <div className="max-h-[400px]  ">
+        {reviews && 
           reviews.map((review)  => ( 
-            <section className="w-full rounded-xl px-0 xl:px-6" key={review.id}  >
+            <section className="w-full rounded-xl px-0 xl:px-6">
             {/* TOPSIDE */}
             <div className="flex justify-between px-2 pt-2 pb-4 gap-4">
               {/* LEFT SIDE */}
@@ -44,15 +43,15 @@ const AllReview = () => {
                 <Avatar className="">
                   <AvatarImage className="" src="" />
                   <AvatarFallback className="bg-[#4D5BCE] text-white border-2 border-color font-bold">
-                    name
+                  {(review.name.toString().slice(0, 1))}
                   </AvatarFallback>
                 </Avatar>
 
                 <div id="wrapper" className="">
-                  <div className="" key={review.id}>
+                  <div className="">
                   <h1 className="text-[14px] tracking-wide">{review.name}</h1>
                   </div>
-                  <div className="" key={review.id}>
+                  <div className="" >
                   <p className="text-[12px]">{(review.date.toString().slice(0, 10))}</p>
                   </div>
                 </div>
@@ -92,10 +91,10 @@ const AllReview = () => {
 
             {/* BOTTOMSIDE */}
             <ScrollArea className="bg-[#011221] flex justify-center px-5 md:px-20 tracking-tight py-6 text-[14px] border border-color rounded-xl mb-4 link-color">
-              <div className="" key={review.id}>
+              <div className="">
                 <h3>{review.title}</h3>
               </div>
-              <div className="max-h-full md:max-h-[150px] text-[#41B673]" key={review.id}>
+              <div className="max-h-full md:max-h-[150px] text-[#41B673]" >
                 <p>{review.body}</p>
               </div>
             </ScrollArea>
