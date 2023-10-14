@@ -33,10 +33,10 @@ const AllReview = () => {
   }, []);
   return (
     <div className='flex items-center justify-center w-full py-2 px-4'>
-      <div className="max-h-[400px]">
+      <div className="max-h-[400px] " >
         {reviews &&
-          reviews.map((review) => (
-            <section className="w-full rounded-xl px-0 xl:px-6" >
+          reviews.map((review)  => ( 
+            <section className="w-full rounded-xl px-0 xl:px-6" key={review.id}  >
             {/* TOPSIDE */}
             <div className="flex justify-between px-2 pt-2 pb-4 gap-4">
               {/* LEFT SIDE */}
