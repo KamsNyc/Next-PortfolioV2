@@ -30,6 +30,7 @@ const AllReview = () => {
   useEffect(() => {
     fetchReview();
   }, []);
+  
   return (
     <div className='flex items-center justify-center w-full py-2 px-4'>
       <div className="max-h-[400px]  ">
@@ -49,10 +50,10 @@ const AllReview = () => {
 
                 <div id="wrapper" className="">
                   <div className="">
-                  <h1 className="text-[14px] tracking-wide">{review.name}</h1>
+                  <h1 className="text-[14px] tracking-wide" key={review.id}>{review.name}</h1>
                   </div>
                   <div className="" >
-                  <p className="text-[12px]">{(review.date.toString().slice(0, 10))}</p>
+                  <p className="text-[12px]"  key={review.id}>{(review.date.toString().slice(0, 10))}</p>
                   </div>
                 </div>
               </div>
@@ -92,10 +93,10 @@ const AllReview = () => {
             {/* BOTTOMSIDE */}
             <ScrollArea className="bg-[#011221] flex justify-center px-5 md:px-20 tracking-tight py-6 text-[14px] border border-color rounded-xl mb-4 link-color">
               <div className="">
-                <h3>{review.title}</h3>
+                <h3 className='text-center font-bold uppercase' key={review.id} >{review.title}</h3>
               </div>
               <div className="max-h-full md:max-h-[150px] text-[#41B673]" >
-                <p>{review.body}</p>
+                <p key={review.id}>{review.body}</p>
               </div>
             </ScrollArea>
           </section>
