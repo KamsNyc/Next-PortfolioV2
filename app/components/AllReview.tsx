@@ -41,6 +41,15 @@ const AllReview = () => {
     });
   };
 
+  const updateCreateTextareaField = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+
+    setCreateReviewForm({
+      ...createReviewForm,
+      [name]: value,
+    });
+  };
+
   const createReview = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -179,7 +188,7 @@ const AllReview = () => {
                 <textarea
                   name="body"
                   value={createReviewForm.body}
-                  onChange={updateCreateFormField}
+                  onChange={updateCreateTextareaField}  // Use the new event handler for the textarea
                   className="rounded-lg outline-[#607B96] w-full max-h-[200px] border-none py-1 min-h-[100px] pl-3 bg-[#011221] text-[#1F6048]"
                 />
                 <div className="pt-5">
