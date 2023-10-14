@@ -51,7 +51,7 @@ const WorkRightContainer = () => {
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] mt-4 px-7 py-4 max-h-[450px] md:max-h-[670px] md:overflow-y-hidden link-color border"
+          className="md:flex-[50%] mt-4 px-7 py-4 max-h-[450px] md:max-h-[670px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto",
           }}
@@ -64,11 +64,11 @@ const WorkRightContainer = () => {
                 <div className="col-span-1">
                     <ProjectTemplate />
                 </div>
-                <div className="col-span-1"><ProjectTemplate /></div>
-                <div className="col-span-1"><ProjectTemplate /></div>
-                <div className="col-span-1"><ProjectTemplate /></div>
-                <div className="col-span-1"><ProjectTemplate /></div>
-                <div className="col-span-1"><ProjectTemplate /></div>
+                  {/* PROJECT GRID 1 */}
+                  <ProjectTemplate />
+                    {/* PROJECT GRID 1 */}
+                    <ProjectTemplate />
+                
                 {/* Add more project items as needed */}
               </div>
             </section>
