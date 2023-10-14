@@ -11,31 +11,30 @@ import Card from './Card';
 interface Review {
   id: number;
   title: string;
-  date: string;
+  date: number;
   name: string;
   body: string;
 }
 
 const AllReview = () => {
   const [showReviewBox, setShowReviewBox] = useState(false);
-  const [reviews, setReviews] = useState(null);
+  const [reviews, setReviews] = useState<Review[] | null>(null); // Specify the type
 
   const fetchNotes = async () => {
     //fetch the notes
-    const res = await axios.get('http://localhost:8000/review')
+    const res = await axios.get('http://localhost:8000/review');
     //set the state
-    setReviews(res.data)
+    setReviews(res.data);
   }
 
-  useEffect( () => {
-    fetchNotes()
-  }, [])
-
+  useEffect(() => {
+    fetchNotes();
+  }, []);
 
   return (
     <div className='flex items-center justify-center w-full py-2 px-4'>
       <div className="max-h-[400px]">
-      {reviews &&
+        {reviews &&
           reviews.map((review) => (
             <Card
               key={review.id}
