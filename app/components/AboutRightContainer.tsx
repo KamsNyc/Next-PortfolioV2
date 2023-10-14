@@ -52,7 +52,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   } else if (selectedItem === "skills") {
     content = "This is my skills content.";
   } else if (selectedItem === "reviews") {
-    content = <AllReview />;
+    content = <div className="block"><AllReview /></div> 
   }
 
 
@@ -111,7 +111,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
 
         {/*DESKTOP CONTENT */}
 
-        <section className="block md:flex justify-center items-center h-[670px] pt-2 px-6 text-center ">
+        <section className="hidden md:flex justify-center items-center h-[670px] pt-2 px-6 text-center ">
           <ScrollArea className="w-full md:mb-14">
             {/* CONTENT */}
             <AllReview />
