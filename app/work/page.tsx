@@ -61,6 +61,7 @@ const page = () => {
       {/* RIGHT SIDE */}
       <section className="flex-[80%] md:flex">
         <WorkRightContainer />
+        
       </section>
     </aside>
 
