@@ -37,5 +37,5 @@ app.put("/review/:id", reviewsController.updateReview);
 app.delete("/review/:id", reviewsController.deleteReview);
 
 //start server
-
-app.listen(process.env.PORT);
+//test
+app.listen(process.env.PORT || PORT);
