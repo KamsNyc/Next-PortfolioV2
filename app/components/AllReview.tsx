@@ -49,10 +49,10 @@ const AllReview = () => {
                 </Avatar>
 
                 <div id="wrapper" className="">
-                  <div className="">
+                  <div className="" key={review.id}>
                   <h1 className="text-[14px] tracking-wide">{review.name}</h1>
                   </div>
-                  <div className="">
+                  <div className="" key={review.id}>
                   <p className="text-[12px]">{(review.date).slice(0,10)}</p>
                   </div>
                 </div>
@@ -92,8 +92,11 @@ const AllReview = () => {
 
             {/* BOTTOMSIDE */}
             <ScrollArea className="bg-[#011221] flex justify-center px-5 md:px-20 tracking-tight py-6 text-[14px] border border-color rounded-xl mb-4 link-color">
-              <div className="max-h-full md:max-h-[150px] text-[#41B673]">
-                review body
+              <div className="" key={review.id}>
+                <h3>{review.title}</h3>
+              </div>
+              <div className="max-h-full md:max-h-[150px] text-[#41B673]" key={review.id}>
+                <p>{review.body}</p>
               </div>
             </ScrollArea>
           </section>
