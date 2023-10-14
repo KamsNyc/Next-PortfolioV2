@@ -18,11 +18,8 @@ interface DialogPortalProps {
   // Other properties...
 }
 
-const SheetPortal = ({
-  className,
-  ...props
-}: DialogPortalProps) => (
-  <SheetPrimitive.Portal className={className} {...props} />
+const SheetPortal = (props: SheetPrimitive.DialogPortalProps) => (
+  <SheetPrimitive.Portal {...props} />
 );
 SheetPortal.displayName = SheetPrimitive.Portal.displayName
 
