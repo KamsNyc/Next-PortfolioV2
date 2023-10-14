@@ -90,7 +90,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
         </ScrollArea>
 
         {/* DYNAMIC HOBBY/CONTENT CLICKS */}
-        <div className="w-full h-20 bg-red-500"></div>
+        <div className=" hidden w-full h-20 bg-red-500"></div>
       </section>
 
       {/* RIGHT SPLIT */}
