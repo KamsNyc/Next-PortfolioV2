@@ -28,7 +28,7 @@ const AllReview = () => {
   });
 
   const fetchReview = async () => {
-    const res = await axios.get("https://busy-jade-dibbler-kilt.cyclic.app/review");
+    const res = await axios.get("https://kams-review-api.onrender.com/review");
     setReviews(res.data);
   };
 
@@ -54,7 +54,7 @@ const AllReview = () => {
     e.preventDefault();
 
     const res = await axios.post(
-      "https://busy-jade-dibbler-kilt.cyclic.app/review",
+      "https://kams-review-api.onrender.com/review",
       createReviewForm
     );
 
