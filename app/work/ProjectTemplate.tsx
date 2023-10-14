@@ -1,3 +1,4 @@
+
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
@@ -16,7 +17,7 @@ const ProjectTemplate = () => {
   return (
     <Sheet>
       {/* PROJECT CONTAINER */}
-      <div id="container" className='h-[320px] w-full rounded-xl'>
+      <SheetTrigger id="container" className='h-[320px] w-full rounded-xl'>
     
         <Image className='h-[50%] object-fill w-full border-none' alt='project picture' width={450} height={145}  src={'/projectpic.png'} />
         
@@ -26,20 +27,19 @@ const ProjectTemplate = () => {
         </h1>
         <p className='mt-2 mb-3'>Duis aute irure dolor in velit esse cillum dolore.</p>
 
-        <SheetTrigger><Button className='bg-[#1C2B3A]' variant="outline">view-project</Button></SheetTrigger>
+        <Button className='bg-[#1C2B3A]' variant="outline">view-project</Button>
         </div>
 
       
-      </div>
+        </SheetTrigger>
 
       {/* SIDE OPEN PROJECT PAGE */}
       
   <SheetContent>
     <SheetHeader>
-      <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+      <SheetTitle>Test</SheetTitle>
       <SheetDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+        yest
       </SheetDescription>
     </SheetHeader>
   </SheetContent>
