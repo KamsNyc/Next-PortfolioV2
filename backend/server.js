@@ -25,7 +25,7 @@ app.use(cors());
 app.get("/review/:id", reviewsController.fetchReview);
 
 //ALLOW TO GET ALL OF THE REVIEWS THAT ARE THERE (LIST OF ALL NOTES)
-app.get("/reviews", reviewsController.fetchReviews);
+app.get("/review", reviewsController.fetchReviews);
 
 //ALLOW USERS TO CREATE REVIEW
 app.post("/review", reviewsController.createReview);
