@@ -53,7 +53,7 @@ const AllReview = () => {
                   <h1 className="text-[14px] tracking-wide">{review.name}</h1>
                   </div>
                   <div className="" key={review.id}>
-                  <p className="text-[12px]">{(review.date).slice(0,10)}</p>
+                  <p className="text-[12px]">{(review.date.toString().slice(0, 10))}</p>
                   </div>
                 </div>
               </div>
