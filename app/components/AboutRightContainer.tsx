@@ -23,28 +23,25 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
         kamel singh this is. kamel sing kamel singh this is my bio. kamel singh
         this is my bio. kamel singh this is my bio. kamel singh this is my bio.
         kamel singh this is my bio. kamel singh this is my bio. kamel singh this
-        is. kamel singh this is my bio. kamel singh this is. kamel sing kamel
-        singh this is my bio. kamel singh this is my bio. kamel singh this is my
-        bio. kamel singh this is my bio. kamel singh this is my bio. kamel singh
-        this is my bio. kamel singh this is. kamel singh this is my bio. kamel
-        singh this is. kamel sing kamel singh this is my bio. kamel singh this
+        is. kamel singh this is my bio. kamel singh this is my bio. kamel singh this
         is my bio. kamel singh this is my bio. kamel singh this is my bio. kamel
-        singh this is my bio. kamel singh this is my bio. kamel singh this is.
-        kamel singh this is my bio. kamel singh this is. kamel sing kamel singh
+        singh this is my bio. kamel singh this is. kamel singh this is my bio.
+        kamel singh this is. kamel sing kamel singh this is my bio. kamel singh
         this is my bio. kamel singh this is my bio. kamel singh this is my bio.
         kamel singh this is my bio. kamel singh this is my bio. kamel singh this
-        is my bio. kamel singh this is. kamel singh this is my bio. kamel singh
-        this is. kamel sing kamel singh this is my bio. kamel singh this is my
-        bio. kamel singh this is my bio. kamel singh this is my bio. kamel singh
-        this is my bio. kamel singh this is my bio. kamel singh this is. kamel
-        singh this is my bio. kamel singh this is. kamel sing kamel singh this
+        is. kamel singh this is my bio. kamel singh this is my bio. kamel singh this
         is my bio. kamel singh this is my bio. kamel singh this is my bio. kamel
-        singh this is my bio. kamel singh this is my bio. kamel singh this is my
-        bio. kamel singh this is. kamel singh this is my bio. kamel singh this
-        is. kamel sing kamel singh this is my bio. kamel singh this is my bio.
+        singh this is my bio. kamel singh this is. kamel singh this is my bio.
+        kamel singh this is. kamel sing kamel singh this is my bio. kamel singh
+        this is my bio. kamel singh this is my bio. kamel singh this is my bio.
         kamel singh this is my bio. kamel singh this is my bio. kamel singh this
-        is my bio. kamel singh this is my bio. kamel singh this is. kamel singh
-        this is my bio. kamel singh this is. kamel sing
+        is. kamel singh this is my bio. kamel singh this is my bio. kamel singh this
+        is my bio. kamel singh this is my bio. kamel singh this is my bio. kamel
+        singh this is my bio. kamel singh this is. kamel singh this is my bio.
+        kamel singh this is. kamel sing kamel singh this is my bio. kamel singh
+        this is my bio. kamel singh this is my bio. kamel singh this is my bio.
+        kamel singh this is my bio. kamel singh this is my bio. kamel singh this
+        is.
       </div>
     );
   } else if (selectedItem === "interests") {
@@ -59,8 +56,8 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   return (
     <section className="md:flex w-full h-full">
       {/* LEFT SPLIT */}
-
       <section className="md:flex-[50%] flex flex-col relative ">
+
         {/* TOPSIDE DESKTOP */}
         <section className="link-color hidden md:flex items-center border-b border-r border-color ">
           <div className="flex items-center px-4 h-full py-[4.20px] border-r border-color cursor-pointer gap-3">
@@ -88,7 +85,12 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
           }}
         >
           <h1 className="text-[14px] md:text-[15px]">{content}</h1>
+
+          
         </ScrollArea>
+
+        {/* DYNAMIC HOBBY/CONTENT CLICKS */}
+        <div className="w-full h-20 bg-red-500"></div>
       </section>
 
       {/* RIGHT SPLIT */}
