@@ -52,7 +52,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
   } else if (selectedItem === "skills") {
     content = "This is my skills content.";
   } else if (selectedItem === "reviews") {
-    content = <div className="block"><AllReview /></div> 
+    content = <AllReview />
   }
 
 
