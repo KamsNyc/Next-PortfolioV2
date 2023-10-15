@@ -58,9 +58,9 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
                 <h2 className='text-white text-base py-2 font-medium'>Technologies</h2>
                 <div id='Badges' className="flex items-center gap-4 py-2">
                   {
-                    badges.map( (badge) => {
+                    badges.map( (badge, index) => {
                       return (
-                        <Button variant="outline">{badge}</Button>
+                        <Button key={index} variant="outline">{badge}</Button>
                       )
                     
                     } )
