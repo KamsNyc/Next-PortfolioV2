@@ -12,6 +12,17 @@ const WorkRightContainer = () => {
     setSelectedTab(tab);
   };
 
+  const projects = [
+    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
+
+    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
+
+    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
+
+    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
+    
+  ]
+
   return (
     <section className="md:flex w-full h-full">
       {/* LEFT SPLIT */}
@@ -57,19 +68,28 @@ const WorkRightContainer = () => {
           }}
         >
           {selectedTab === "projects" && (
-            <section className="h-full">
+            <section className="h-full ">
               {/* PROJECT GRID */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full h-full">
                 {/* PROJECT GRID 1 */}
-                <div className="col-span-1">
-                    <ProjectTemplate />
-                </div>
-                  {/* PROJECT GRID 1 */}
-                  <ProjectTemplate />
-                    {/* PROJECT GRID 1 */}
-                    <ProjectTemplate />
                 
-                {/* Add more project items as needed */}
+                {/* NEED TO MAP INTO A COL-SPAN-1 */}
+                {
+                  projects.map( (project) => {
+                    return (
+                      <>
+                      <div className="col-span-1">
+                <ProjectTemplate title={project.title} subTitle={project.subTitle} coverVideoLink={project.coverVideoLink} about={project.about} webLink={project.webLink} gitLink={project.gitLink} mainCoverLink={project.mainCoverLink} badges={project.badges}/>
+                </div>
+                
+                </>
+                    )
+                    
+                  })
+                }
+                
+                
+              
               </div>
             </section>
           )}
@@ -83,4 +103,3 @@ const WorkRightContainer = () => {
 };
 
 export default WorkRightContainer;
-

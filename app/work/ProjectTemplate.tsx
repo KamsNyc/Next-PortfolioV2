@@ -1,8 +1,7 @@
-
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Sheet,
   SheetContent,
@@ -15,65 +14,82 @@ import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import { ScrollArea } from '@/components/ui/scroll-area'
 
-
-
-const ProjectTemplate = () => {
+function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about, webLink, gitLink, badges }) {
 
   return (
     <Sheet>
       {/* PROJECT CONTAINER */}
-      <SheetTrigger id="container" className='h-[320px] w-full rounded-xl'>
-    
-        <Image className='h-[50%] object-fill w-full border-none' alt='project picture' width={450} height={145}  src={'/projectpic.png'} />
-        
-        <div id="wrapper" className='p-3 bg-[#011221] h-[50%] border-t border-color border items-center justify-center '>
-        <h1 className="">
-        title
-        </h1>
-        <p className='mt-2 mb-3'>Duis aute irure dolor in velit esse cillum dolore.</p>
-
-        <Button className='bg-[#1C2B3A]' variant="outline">view-project</Button>
+      <SheetTrigger id="container" className='h-[350px] w-full rounded-xl'>
+        <Image className='h-[50%] object-fill w-full border-none rounded-t-xl' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
+        <div id="wrapper" className='p-3 bg-[#011221] h-[50%] border-t border-color border rounded-b-xl text-left'>
+          <h1 className="text-[#41B673] uppercase text-[16px]">
+            {title}
+          </h1>
+          <p className='mt-2 mb-3 text-[14px]'>{subTitle}</p>
+          <Button className='bg-[#1C2B3A]' variant="outline">View More</Button>
         </div>
-
-      
-        </SheetTrigger>
+      </SheetTrigger>
 
       {/* SIDE OPEN PROJECT PAGE */}
-      
-  <SheetContent>
-    <SheetHeader>
-    <SheetTitle className='text-white'>Project Name</SheetTitle>
-    {/* BORDER */}
-      <div className="border-b border-color py-1"></div>
+      <SheetContent className='w-[90%] md:w-full px-4'>
+        <ScrollArea className='h-full'>
+          <SheetHeader>
+            <SheetTitle className='text-white text-right text-base pr-4 font-normal'><Link href={'/work'}>Back to all projects</Link></SheetTitle>
+            {/* BORDER */}
+            <div className="border-b border-color py-2 px-2"></div>
 
-      <div className="text-white hover:scale-110 duration-500 cursor-pointer ease-in-out"><ProjectTemplate /></div>
+            {/* SUBTITLE (SHORT DESCRIPTION) */}
+            <h1 className='font-bold text-[24px] text-white'>{title}</h1>
+            <p className='link-color text-[14px] leading-5'>{subTitle}</p>
 
-      <div id='Badges' className="flex items-center justify-center gap-4 py-4 ">
-      <Badge variant="outline">Badge</Badge>
-      <Badge variant="outline">Badge</Badge>
-      <Badge variant="outline">Badge</Badge>
-      <Badge variant="outline">Badge</Badge>
-      </div>
-      
-      <SheetDescription >
-        <ScrollArea className=" overflow-auto max-h-[200px]">
-        <h2 className='text-white text-[12px] underline pb-2'>About</h2>
-         <p>this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is</p>
-         </ScrollArea>
-      </SheetDescription>
+            {/* COVER IMAGE */}
+            <Image src={coverVideoLink} alt={`${subTitle}`} width={450} height={100} className='max-h-[250px] w-full rounded-2xl px-2' />
 
-    {/* VIEW WEBSITE */}
-    <div className="flex w-full gap-8 pt-4">
-    <Button className='w-full text-white' variant="outline">View Website</Button>
-    <Button className='w-full text-white' variant="outline">Github</Button>
-    </div>
-    
-    </SheetHeader>
-  </SheetContent>
+            <SheetDescription className="h-full text-left px-2">
+              <div className="overflow-y-auto h-full">
+                {/* ABOUT */}
+                <h2 className='text-white text-base py-2 font-medium'>About</h2>
+                <p className='text-[14px]'>{about}</p>
 
-    
+                {/* BORDER */}
+                <div className="border-b border-color py-2"></div>
+
+                {/* TECHNOLOGY */}
+                <h2 className='text-white text-base py-2 font-medium'>Technologies</h2>
+                <div id='Badges' className="flex items-center gap-4 py-2">
+                  {
+                    badges.map( (badge) => {
+                      return (
+                        <Button variant="outline">{badge}</Button>
+                      )
+                    
+                    } )
+                  }
+                 
+                </div>
+
+                  {/* BORDER */}
+            <div className="border-b border-color py-2"></div>
+
+                {/* WEBSITE */}
+                <h2 className='text-white text-base py-2 font-lg'>Website Link</h2>
+                <p className='text-base'>{webLink}</p>
+              </div>
+
+                {/* BORDER */}
+            <div className="border-b border-color"></div>
+            </SheetDescription>
+
+            {/* VIEW WEBSITE */}
+            <div className="flex w-full gap-8 pt-4 px-4">
+              <Button className='w-full text-white' variant="outline"><Link href={`${webLink}`}>View Website</Link></Button>
+              <Button className='w-full text-white' variant="outline"><Link href={`${gitLink}`}>Github</Link></Button>
+            </div>
+          </SheetHeader>
+        </ScrollArea>
+      </SheetContent>
     </Sheet>
   )
 }
 
-export default ProjectTemplate
+export default ProjectTemplate;
