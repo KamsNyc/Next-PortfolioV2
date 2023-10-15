@@ -14,7 +14,18 @@ import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import { ScrollArea } from '@/components/ui/scroll-area'
 
-function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about, webLink, gitLink, badges }) {
+interface ProjectTemplateProps {
+  mainCoverLink: string;
+  coverVideoLink: string;
+  subTitle: string;
+  title: string;
+  about: string;
+  webLink: string;
+  gitLink: string;
+  badges: string[]; // Assuming badges is an array of strings
+}
+
+function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about, webLink, gitLink, badges }: ProjectTemplateProps) {
 
   return (
     <Sheet>
