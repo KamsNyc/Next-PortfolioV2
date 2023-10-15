@@ -6,7 +6,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import ProjectTemplate from "../work/ProjectTemplate";
 
 const WorkRightContainer = () => {
-  const [selectedTab, setSelectedTab] = useState<string>("projects"); // Specify the type as string
+  const [selectedTab, setSelectedTab] = useState<string>("projects"); 
 
   const handleTabClick = (tab: string) => {
     setSelectedTab(tab);
@@ -20,7 +20,6 @@ const WorkRightContainer = () => {
     {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
 
     {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
-    
   ]
 
   return (

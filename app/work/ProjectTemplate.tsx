@@ -22,7 +22,7 @@ interface ProjectTemplateProps {
   about: string;
   webLink: string;
   gitLink: string;
-  badges: string[]; // Assuming badges is an array of strings
+  badges: string[];
 }
 
 function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about, webLink, gitLink, badges }: ProjectTemplateProps) {
