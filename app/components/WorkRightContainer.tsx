@@ -69,7 +69,7 @@ const WorkRightContainer = () => {
           {selectedTab === "projects" && (
             <section className="h-full ">
               {/* PROJECT GRID */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full h-full">
+              <div className="block md:grid md:grid-cols-3 gap-4 w-full h-full">
                 {/* PROJECT GRID 1 */}
                 
                 {/* NEED TO MAP INTO A COL-SPAN-1 */}
@@ -77,7 +77,7 @@ const WorkRightContainer = () => {
                   projects.map( (project) => {
                     return (
                       <>
-                      <div className="col-span-1">
+                      <div className="col-span-1 mb-4 md:mb-0">
                 <ProjectTemplate title={project.title} subTitle={project.subTitle} coverVideoLink={project.coverVideoLink} about={project.about} webLink={project.webLink} gitLink={project.gitLink} mainCoverLink={project.mainCoverLink} badges={project.badges}/>
                 </div>
                 
