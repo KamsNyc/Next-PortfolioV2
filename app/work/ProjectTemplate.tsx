@@ -31,7 +31,7 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
     <Sheet>
       {/* PROJECT CONTAINER */}
       <SheetTrigger id="container" className='h-[350px] w-full rounded-xl'>
-        <Image className='h-[50%] object-fill w-full border-none rounded-t-xl' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
+        <Image className='h-[50%] obl w-full border-none rounded-t-xl' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
         <div id="wrapper" className='p-3 bg-[#011221] h-[50%] border-t border-color border rounded-b-xl text-left'>
           <h1 className="text-[#41B673] uppercase text-[16px]">
             {title}
@@ -45,12 +45,12 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
       <SheetContent className='w-[90%] md:w-full px-4'>
         <ScrollArea className='h-full'>
           <SheetHeader>
-            <SheetTitle className='text-white text-right text-base pr-4 font-normal'><Link href={'/work'}>Back to all projects</Link></SheetTitle>
+            <SheetTitle className='text-white text-right text-xs hover:text-[#41B673] hover:scale-105 duration-300 ease-in pr-4 font-normal'><Link href={'/work'}>back to all projects</Link></SheetTitle>
             {/* BORDER */}
             <div className="border-b border-color py-2 px-2"></div>
 
             {/* SUBTITLE (SHORT DESCRIPTION) */}
-            <h1 className='font-bold text-[24px] text-white'>{title}</h1>
+            <h1 className='font-bold text-[24px] text-[#41B673]'>{title}</h1>
             <p className='link-color text-[14px] leading-5'>{subTitle}</p>
 
             {/* COVER IMAGE */}
@@ -58,15 +58,17 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
 
             <SheetDescription className="h-full text-left px-2">
               <div className="overflow-y-auto h-full">
+                 {/* WEBSITE */}
+                 <p className='text-base text-center cursor-pointer duration-300 ease-in-out hover:text-[#41B673]'>{webLink}</p>
                 {/* ABOUT */}
-                <h2 className='text-white text-base py-2 font-medium'>About</h2>
-                <p className='text-[14px]'>{about}</p>
+                <h2 className='text-white text-base py-2 font-light'>About</h2>
+                <p className='text-[14px] hover:text-white'>{about}</p>
 
                 {/* BORDER */}
                 <div className="border-b border-color py-2"></div>
 
                 {/* TECHNOLOGY */}
-                <h2 className='text-white text-base py-2 font-medium'>Technologies</h2>
+                <h2 className='text-white text-base py-2 font-light'>Technologies</h2>
                 <div id='Badges' className="flex items-center gap-4 py-2">
                   {
                     badges.map( (badge, index) => {
@@ -82,13 +84,9 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
                   {/* BORDER */}
             <div className="border-b border-color py-2"></div>
 
-                {/* WEBSITE */}
-                <h2 className='text-white text-base py-2 font-lg'>Website Link</h2>
-                <p className='text-base'>{webLink}</p>
+               
               </div>
 
-                {/* BORDER */}
-            <div className="border-b border-color"></div>
             </SheetDescription>
 
             {/* VIEW WEBSITE */}

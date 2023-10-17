@@ -13,13 +13,13 @@ const WorkRightContainer = () => {
   };
 
   const projects = [
-    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
+    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/sunpowercover.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.sunpowerestimate.com', gitLink:'www.github.com/KamsNyc/Next-PortfolioV2', mainCoverLink:'/sunpower.gif', badges: ['Wordpress',  'Javascript', 'Firebase', 'Branding'],},
 
     {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
 
     {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
 
-    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
+    {title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Firebase', 'Javascript', 'Wordpress', 'Tailwind'],},
   ]
 
   return (
@@ -67,9 +67,9 @@ const WorkRightContainer = () => {
           }}
         >
           {selectedTab === "projects" && (
-            <section className="h-full ">
+            <section className="h-full w-full">
               {/* PROJECT GRID */}
-              <div className="block md:grid md:grid-cols-3 gap-4 w-full h-full">
+              <div className="block md:grid md:grid-cols-3 gap-4 w-full h-full ">
                 {/* PROJECT GRID 1 */}
                 
                 {/* NEED TO MAP INTO A COL-SPAN-1 */}
@@ -77,7 +77,7 @@ const WorkRightContainer = () => {
                   projects.map( (project) => {
                     return (
                       <>
-                      <div className="col-span-1 mb-4 md:mb-0">
+                      <div className="col-span-1 mb-4 md:mb-0 hover:scale-95 duration-300 ease-in ">
                 <ProjectTemplate title={project.title} subTitle={project.subTitle} coverVideoLink={project.coverVideoLink} about={project.about} webLink={project.webLink} gitLink={project.gitLink} mainCoverLink={project.mainCoverLink} badges={project.badges}/>
                 </div>
                 
