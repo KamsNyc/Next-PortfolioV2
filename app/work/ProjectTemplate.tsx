@@ -43,7 +43,7 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
 
       {/* SIDE OPEN PROJECT PAGE */}
       <SheetContent className='w-[90%] md:w-full px-4'>
-        <ScrollArea className='h-full w-full'>
+        <ScrollArea className='h-full '>
           <SheetHeader>
             <SheetTitle className='text-white text-right text-xs hover:text-[#41B673] hover:scale-105 duration-300 ease-in pr-4 font-normal'><Link href={'/work'}>back to all projects</Link></SheetTitle>
             {/* BORDER */}
