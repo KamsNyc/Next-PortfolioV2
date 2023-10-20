@@ -61,7 +61,7 @@ const WorkRightContainer = () => {
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] mt-4 px-7 py-4 max-h-[450px] md:max-h-[670px] md:overflow-y-hidden link-color"
+          className="md:flex-[50%] mt-4 px-7 py-4 max-h-[280px] md:max-h-[670px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto",
           }}
@@ -69,7 +69,7 @@ const WorkRightContainer = () => {
           {selectedTab === "projects" && (
             <section className="h-full w-full">
               {/* PROJECT GRID */}
-              <div className="block md:grid md:grid-cols-3 gap-4 w-full h-full ">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full h-full ">
                 {/* PROJECT GRID 1 */}
                 
                 {/* NEED TO MAP INTO A COL-SPAN-1 */}

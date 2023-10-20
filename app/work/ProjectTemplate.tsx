@@ -30,8 +30,8 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
   return (
     <Sheet>
       {/* PROJECT CONTAINER */}
-      <SheetTrigger id="container" className='block h-[350px] w-full rounded-xl'>
-        <Image className='h-[50%] obl w-full border-none rounded-t-xl' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
+      <SheetTrigger id="container" className='h-full w-full rounded-xl'>
+        <Image className='h-[50%] w-full border-none rounded-t-xl' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
         <div id="wrapper" className='p-3 bg-[#011221] h-[50%] border-t border-color border rounded-b-xl text-left'>
           <h1 className="text-[#41B673] uppercase text-[16px]">
             {title}
