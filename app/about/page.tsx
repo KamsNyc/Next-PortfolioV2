@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const about = () => {
   return (
-    <main className="relative w-full h-full md:h-screen border border-color rounded-xl bg-[#011627] ">
+    <main className="relative w-full h-screen border border-color rounded-xl bg-[#011627] ">
       {/* HEADER */}
 <div className="absolute left-0 w-full px-4 border-b border-color md:px-14 xl:px-32 2xl:px-60 z-40 "><Navbar /></div>
     
