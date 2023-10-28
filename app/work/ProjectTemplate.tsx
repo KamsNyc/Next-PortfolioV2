@@ -42,8 +42,8 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
       </SheetTrigger>
 
       {/* SIDE OPEN PROJECT PAGE */}
-      <SheetContent className='w-[90%] md:w-full px-4'>
-        <ScrollArea className='h-full w-full'>
+      <SheetContent className='w-full px-4'>
+        <ScrollArea className='h-full '>
           <SheetHeader>
             <SheetTitle className='text-white text-right text-xs hover:text-[#41B673] hover:scale-105 duration-300 ease-in pr-4 font-normal'><Link href={'/work'}>back to all projects</Link></SheetTitle>
             {/* BORDER */}
@@ -54,7 +54,7 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
             <p className='link-color text-[14px] leading-5'>{subTitle}</p>
 
             {/* COVER IMAGE */}
-            <Image src={coverVideoLink} alt={`${subTitle}`} width={450} height={100} className='max-h-[250px] w-full rounded-2xl px-2' />
+            <Image src={coverVideoLink} alt={`${subTitle}`} width={450} height={100} className='max-h-[250px] w-[450px] rounded-2xl px-2' />
 
             <SheetDescription className="h-full text-left px-2">
               <div className="overflow-y-auto h-full">
