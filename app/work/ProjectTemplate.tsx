@@ -23,22 +23,28 @@ interface ProjectTemplateProps {
   webLink: string;
   gitLink: string;
   badges: string[];
+  type: string;
 }
 
-function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about, webLink, gitLink, badges }: ProjectTemplateProps) {
+function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about, webLink, gitLink, badges, type }: ProjectTemplateProps) {
 
   return (
     (
       <Sheet>
         {/* PROJECT CONTAINER */}
         <SheetTrigger id="container" className='h-full w-full rounded-xl'>
-          <Image className='h-[50%] w-full border-none rounded-t-xl' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
+          {/* TYPE PREVIEW */}
+          <div className=""></div>
+          <Image className='h-[50%] w-full border-none rounded-t-xl object-full object-top' src={mainCoverLink} alt={`${subTitle}`} width={450} height={145} />
           <div id="wrapper" className='p-3 bg-[#011221] h-[50%] border-t border-color border rounded-b-xl text-left'>
             <h1 className="text-[#41B673] uppercase text-[16px]">
               {title}
             </h1>
             <p className='mt-2 mb-3 text-[14px]'>{subTitle}</p>
+            <div className="flex gap-x-4 items-center">
             <Button className='bg-[#1C2B3A]' variant="outline">View More</Button>
+            <Button size='sm' variant='outline'>{type}</Button>
+            </div>
           </div>
         </SheetTrigger>
   
@@ -55,7 +61,7 @@ function ProjectTemplate({mainCoverLink, coverVideoLink, subTitle, title, about,
               <p className='link-color text-[14px] leading-5'>{subTitle}</p>
   
               {/* COVER IMAGE */}
-              <Image src={coverVideoLink} alt={`${subTitle}`} width={450} height={100} className='max-h-[250px] w-full rounded-2xl px-2' />
+              <Image src={coverVideoLink} alt={`${subTitle}`} width={450} height={100} className='max-h-[250px] w-full rounded-2xl px-2 object-fill' />
   
               <SheetDescription className="h-full text-left px-2">
                 <div className="overflow-y-auto h-full">
