@@ -40,7 +40,7 @@ const AboutItem = () => {
                   height={15}
                   alt="Picture of the author"
                 />
-                hobby1
+                hobby
               </div>
             </div>
 
