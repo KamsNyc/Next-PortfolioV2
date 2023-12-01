@@ -15,6 +15,12 @@ const WorkRightContainer = () => {
   const projects = [
     {type: 'code', title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/sunpower.gif', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.sunpowerestimate.com', gitLink:'www.github.com/KamsNyc/', mainCoverLink:'/sunpowercover.png', badges: ['Wordpress',  'Javascript', 'Firebase', 'Branding'],},
 
+    {type: 'code', title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/sunpower.gif', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.sunpowerestimate.com', gitLink:'www.github.com/KamsNyc/', mainCoverLink:'/sunpowercover.png', badges: ['Wordpress',  'Javascript', 'Firebase', 'Branding'],},
+
+    {type: 'code', title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/sunpower.gif', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.sunpowerestimate.com', gitLink:'www.github.com/KamsNyc/', mainCoverLink:'/sunpowercover.png', badges: ['Wordpress',  'Javascript', 'Firebase', 'Branding'],},
+
+    {type: 'code', title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/sunpower.gif', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.sunpowerestimate.com', gitLink:'www.github.com/KamsNyc/', mainCoverLink:'/sunpowercover.png', badges: ['Wordpress',  'Javascript', 'Firebase', 'Branding'],},
+
     {type: 'design', title: 'SwiftProperty Auctions', subTitle: 'Find your Dream Property With Swift Property Auctions', coverVideoLink: '/SwiftProperty.gif', about:'client project client project', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/SwiftPropertyCover.png', badges: ['Figma'],},
 
     {type: 'code', title: 'Sunpower Estimates', subTitle: 'Empowering Pharmacies Toward a Healthier Africa.', coverVideoLink: '/project2.png', about:'this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is this project is this project is this project is this project is this project is this project is this project is this project is this project isthis project isthis project isthis project isthis project isthis project isthis project is this project isthis project is', webLink:'www.youtube.com', gitLink:'link not found', mainCoverLink:'/project2.png', badges: ['Nextjs', 'React', 'Node.js'],},
@@ -61,7 +67,7 @@ const WorkRightContainer = () => {
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] mt-4 px-7 py-4 max-h-[280px] md:max-h-[670px] md:overflow-y-hidden link-color"
+          className="md:flex-[50%] mt-4 px-7 py-4 max-h-[510px] md:max-h-[870px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto",
           }}
@@ -69,7 +75,7 @@ const WorkRightContainer = () => {
           {selectedTab === "projects" && (
             <section className="h-full w-full">
               {/* PROJECT GRID */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full h-full ">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 w-full h-full ">
                 {/* PROJECT GRID 1 */}
                 
                 {/* NEED TO MAP INTO A COL-SPAN-1 */}

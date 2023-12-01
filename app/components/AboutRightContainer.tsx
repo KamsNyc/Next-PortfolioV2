@@ -79,7 +79,7 @@ const AboutRightContainer: React.FC<AboutRightContainerProps> = ({
 
         {/* CONTENT */}
         <ScrollArea
-          className="md:flex-[50%] px-7 py-4 max-h-[310px] md:max-h-[670px] md:overflow-y-hidden link-color"
+          className="md:flex-[50%] px-7 py-4 max-h-[510px] md:max-h-[670px] md:overflow-y-hidden link-color"
           style={{
             overflowY: "auto",
           }}

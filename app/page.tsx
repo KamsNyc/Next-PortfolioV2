@@ -16,20 +16,20 @@ import AllReview from "./components/AllReview";
 
 export default function Home() {
   return (
-    <main className="relative w-full h-full md:h-screen border border-color rounded-none md:rounded-xl bg-[#011627] px-4">
+    <main className="relative w-full h-screen border border-color rounded-none md:rounded-xl bg-[#011627] px-4">
       {/* NAVBAR */}
       <div className="absolute top-0 left-0 w-full px- border-b border-color md:px-14 xl:px-32 2xl:px-60 z-40">
         <Navbar />
       </div>
 
       {/* CONTAINER */}
-      <section className="md:flex justify-center h-[669px] items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-0 gap-4 md:gap-8 xl:gap-16 mt-[49px]">
+      <section className="md:flex justify-center h-full md:h-[669px] items-center text-white md:px-14 xl:px-32 2xl:px-60 pt-32 md:pt-0 gap-4 md:gap-8 xl:gap-16 md:mt-[49px]">
         {/* LEFT SIDE */}
         <div className="w-full z-10">
           <p className="text-lg xl:text-xl z-30">What&apos;s up!, I&apos;m </p>
 
           {/* HEADING/AVATAR WRAPPER */}
-          <div id="wrapper" className="flex items-center w-full justify-between sm:gap-4">
+          <div id="wrapper" className="flex items-center w-full justify-between sm:gap-4 ">
             <h1 className="text-7xl md:text-7xl tracking-wide lg:tracking-tighter py-2 lg:py-0 font-base ml-[-.5rem] z-30">Kamel Singh</h1>
             <Avatar className="w-32 h-32 lg:hidden">
               <AvatarImage className="" src="https://github.com/shadcn.png" />
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
 
           {/* MOBILE SUBTITLE */}
-          <div className="absolute bottom-[25%] md:hidden text-[#607B96] tracking-wide z-30">
+          <div className="absolute bottom-[40%] md:hidden text-[#607B96] tracking-wide z-30">
             <p className="py-1">&gt; your future fullstack developer </p>
             <p className="pb-4">&gt; designing and deploying websites </p>
             <div id="wrapper" className="flex">
